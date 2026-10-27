@@ -1,0 +1,663 @@
+{
+  "file_path": "C:\\Users\\M S I\\Downloads\\complaints_cleaned.csv",
+  "total_rows": 12710,
+  "total_columns": 5,
+  "columns": [
+    "Product",
+    "Sub-product",
+    "Issue",
+    "Sub-issue",
+    "text"
+  ],
+  "missing_summary": {
+    "Product": {
+      "na_count": 0,
+      "blank_count": 0,
+      "pct_missing": 0.0
+    },
+    "Sub-product": {
+      "na_count": 0,
+      "blank_count": 0,
+      "pct_missing": 0.0
+    },
+    "Issue": {
+      "na_count": 0,
+      "blank_count": 0,
+      "pct_missing": 0.0
+    },
+    "Sub-issue": {
+      "na_count": 0,
+      "blank_count": 0,
+      "pct_missing": 0.0
+    },
+    "text": {
+      "na_count": 0,
+      "blank_count": 0,
+      "pct_missing": 0.0
+    }
+  },
+  "text_statistics": {
+    "char_length_mean": 1365.6,
+    "char_length_median": 952.0,
+    "char_length_min": 19,
+    "char_length_max": 31383,
+    "word_count_mean": 250.0,
+    "word_count_median": 175.0,
+    "word_count_min": 1,
+    "word_count_max": 5573
+  },
+  "exact_duplicates": {
+    "pandas_duplicated_count": 13,
+    "total_duplicate_groups": 10,
+    "total_rows_in_duplicate_groups": 23,
+    "conflict_categorization": {
+      "identical_text_identical_labels": 0,
+      "conflicting_product": 5,
+      "conflicting_subproduct": 6,
+      "conflicting_issue": 3,
+      "conflicting_subissue": 6,
+      "multi_level_conflicts": 5
+    },
+    "groups_detail": [
+      {
+        "group_size": 2,
+        "row_indices": [
+          8836,
+          8846
+        ],
+        "text_snippet": "A balance is reporting on my Chase account in error which is substantially dropping my credit scores and is inhibiting m",
+        "unique_products": 1,
+        "unique_subproducts": 1,
+        "unique_issues": 1,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Incorrect information on your report",
+            "Sub-issue": "Account information incorrect"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Incorrect information on your report",
+            "Sub-issue": "Account status incorrect"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          1719,
+          3156
+        ],
+        "text_snippet": "How are you? Im extremely upset and shocked about the way this charge-off account is reporting on my credit report which",
+        "unique_products": 2,
+        "unique_subproducts": 2,
+        "unique_issues": 2,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Debt collection",
+            "Sub-product": "Credit card debt",
+            "Issue": "Attempts to collect debt not owed",
+            "Sub-issue": "Debt was paid"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          1048,
+          9744
+        ],
+        "text_snippet": "I am an ID Theft Victim and reported my consumer statement on XX/XX/2014 to advise the credit bureaus of my status and f",
+        "unique_products": 1,
+        "unique_subproducts": 1,
+        "unique_issues": 1,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Incorrect information on your report",
+            "Sub-issue": "Information belongs to someone else"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Incorrect information on your report",
+            "Sub-issue": "Account status incorrect"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          9384,
+          11740
+        ],
+        "text_snippet": "I do not agree with XXXX Chase accounts listed on my personal credit file. I prior put a complaint against this agency d",
+        "unique_products": 1,
+        "unique_subproducts": 1,
+        "unique_issues": 1,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Debt collection",
+            "Sub-product": "Credit card",
+            "Issue": "Disclosure verification of debt",
+            "Sub-issue": "Not given enough info to verify debt"
+          },
+          {
+            "Product": "Debt collection",
+            "Sub-product": "Credit card",
+            "Issue": "Disclosure verification of debt",
+            "Sub-issue": "Right to dispute notice not received"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          3866,
+          5482
+        ],
+        "text_snippet": "I have taken notes of dates and names and everyone who I spoke to etc since XXXX trying to settle this credit card accou",
+        "unique_products": 2,
+        "unique_subproducts": 2,
+        "unique_issues": 2,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Debt collection",
+            "Sub-product": "Credit card debt",
+            "Issue": "Attempts to collect debt not owed",
+            "Sub-issue": "Debt was paid"
+          },
+          {
+            "Product": "Credit card or prepaid card",
+            "Sub-product": "General-purpose credit card or charge card",
+            "Issue": "Closing your account",
+            "Sub-issue": "Can't close your account"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          522,
+          12631
+        ],
+        "text_snippet": "I noticed my credit card was not working so i called chase and they said the account has been closed but they could not ",
+        "unique_products": 2,
+        "unique_subproducts": 2,
+        "unique_issues": 2,
+        "unique_subissues": 1,
+        "labels": [
+          {
+            "Product": "Credit card or prepaid card",
+            "Sub-product": "General-purpose credit card or charge card",
+            "Issue": "Closing your account",
+            "Sub-issue": "Company closed your account"
+          },
+          {
+            "Product": "Checking or savings account",
+            "Sub-product": "Checking account",
+            "Issue": "Closing an account",
+            "Sub-issue": "Company closed your account"
+          }
+        ]
+      },
+      {
+        "group_size": 3,
+        "row_indices": [
+          1586,
+          1801,
+          3089
+        ],
+        "text_snippet": "I see multiple 30-60 days late marks which is a clear violation of my right under the FCRA. The company has never respon",
+        "unique_products": 3,
+        "unique_subproducts": 3,
+        "unique_issues": 1,
+        "unique_subissues": 1,
+        "labels": [
+          {
+            "Product": "Vehicle loan or lease",
+            "Sub-product": "Loan",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Credit card or prepaid card",
+            "Sub-product": "General-purpose credit card or charge card",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          1699,
+          8458
+        ],
+        "text_snippet": "Online message sent to Chase on XXXX XX/XX/2020. Promised a response in 1-2 business days. NEVER RECEIVED A RESPONSE ...",
+        "unique_products": 1,
+        "unique_subproducts": 2,
+        "unique_issues": 1,
+        "unique_subissues": 1,
+        "labels": [
+          {
+            "Product": "Checking or savings account",
+            "Sub-product": "Savings account",
+            "Issue": "Managing an account",
+            "Sub-issue": "Problem accessing account"
+          },
+          {
+            "Product": "Checking or savings account",
+            "Sub-product": "Checking account",
+            "Issue": "Managing an account",
+            "Sub-issue": "Problem accessing account"
+          }
+        ]
+      },
+      {
+        "group_size": 4,
+        "row_indices": [
+          2804,
+          3067,
+          7256,
+          8067
+        ],
+        "text_snippet": "This particular account situation that is lately filing on my own credit document has a seriously unfavorable relation t",
+        "unique_products": 3,
+        "unique_subproducts": 4,
+        "unique_issues": 1,
+        "unique_subissues": 1,
+        "labels": [
+          {
+            "Product": "Credit card or prepaid card",
+            "Sub-product": "General-purpose credit card or charge card",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Vehicle loan or lease",
+            "Sub-product": "Lease",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Vehicle loan or lease",
+            "Sub-product": "Loan",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          }
+        ]
+      },
+      {
+        "group_size": 2,
+        "row_indices": [
+          11668,
+          12685
+        ],
+        "text_snippet": "XXXX has been non-compliant with removing the unverified account CHASE CARD Opened Date XX/XX/2015 which has been delete",
+        "unique_products": 1,
+        "unique_subproducts": 1,
+        "unique_issues": 1,
+        "unique_subissues": 2,
+        "labels": [
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Their investigation did not fix an error on your report"
+          },
+          {
+            "Product": "Credit reporting, credit repair services, or other personal consumer reports",
+            "Sub-product": "Credit reporting",
+            "Issue": "Problem with a credit reporting company's investigation into an existing problem",
+            "Sub-issue": "Was not notified of investigation status or results"
+          }
+        ]
+      }
+    ]
+  },
+  "normalized_duplicates": {
+    "normalized_duplicated_count": 15
+  },
+  "class_distributions": {
+    "Product": {
+      "unique_count": 6,
+      "most_frequent": "Credit card or prepaid card",
+      "most_frequent_count": 5001,
+      "least_frequent": "Student loan",
+      "least_frequent_count": 140,
+      "imbalance_ratio": 35.72,
+      "singletons_count": 0,
+      "classes": {
+        "Credit card or prepaid card": 5001,
+        "Checking or savings account": 4284,
+        "Credit reporting, credit repair services, or other personal consumer reports": 1956,
+        "Debt collection": 929,
+        "Vehicle loan or lease": 400,
+        "Student loan": 140
+      }
+    },
+    "Sub-product": {
+      "unique_count": 31,
+      "most_frequent": "General-purpose credit card or charge card",
+      "most_frequent_count": 4900,
+      "least_frequent": "Federal student loan",
+      "least_frequent_count": 1,
+      "imbalance_ratio": 4900.0,
+      "singletons_count": 3,
+      "classes": {
+        "General-purpose credit card or charge card": 4900,
+        "Checking account": 3782,
+        "Credit reporting": 1894,
+        "Credit card debt": 407,
+        "Loan": 281,
+        "Other banking product or service": 242,
+        "Savings account": 232,
+        "Credit card": 221,
+        "Lease": 119,
+        "Non-federal student loan": 109,
+        "I do not know": 82,
+        "Mortgage debt": 64,
+        "Other personal consumer report": 62,
+        "Store credit card": 53,
+        "Mortgage": 49,
+        "Other debt": 31,
+        "Auto debt": 31,
+        "General-purpose prepaid card": 28,
+        "CD (Certificate of Deposit)": 27,
+        "Private student loan": 25,
+        "Other (i.e. phone, health club, etc.)": 19,
+        "Federal student loan servicing": 11,
+        "Auto": 9,
+        "Government benefit card": 9,
+        "Gift card": 9,
+        "Private student loan debt": 7,
+        "Payroll card": 2,
+        "Payday loan debt": 2,
+        "Payday loan": 1,
+        "Personal line of credit": 1,
+        "Federal student loan": 1
+      }
+    },
+    "Issue": {
+      "unique_count": 46,
+      "most_frequent": "Managing an account",
+      "most_frequent_count": 2269,
+      "least_frequent": "Problem with overdraft",
+      "least_frequent_count": 1,
+      "imbalance_ratio": 2269.0,
+      "singletons_count": 2,
+      "classes": {
+        "Managing an account": 2269,
+        "Problem with a purchase shown on your statement": 1801,
+        "Incorrect information on your report": 1125,
+        "Other features, terms, or problems": 752,
+        "Closing an account": 745,
+        "Problem with a lender or other company charging your account": 584,
+        "Closing your account": 524,
+        "Problem with a credit reporting company's investigation into an existing problem": 500,
+        "Fees or interest": 483,
+        "Improper use of your report": 464,
+        "Getting a credit card": 389,
+        "Advertising and marketing, including promotional offers": 363,
+        "Opening an account": 354,
+        "Problem caused by your funds being low": 320,
+        "Attempts to collect debt not owed": 248,
+        "Problem when making payments": 234,
+        "Trouble using your card": 174,
+        "Managing the loan or lease": 137,
+        "Problems at the end of the loan or lease": 134,
+        "Cont'd attempts collect debt not owed": 131,
+        "Communication tactics": 122,
+        "Took or threatened to take negative or legal action": 105,
+        "False statements or representation": 103,
+        "Written notification about debt": 93,
+        "Struggling to pay your bill": 82,
+        "Dealing with my lender or servicer": 69,
+        "Struggling to pay your loan": 56,
+        "Disclosure verification of debt": 51,
+        "Taking/threatening an illegal action": 50,
+        "Credit monitoring or identity theft protection services": 46,
+        "Can't repay my loan": 38,
+        "Dealing with your lender or servicer": 20,
+        "Getting a loan or lease": 20,
+        "Unable to get your credit report or credit score": 19,
+        "Improper contact or sharing of info": 19,
+        "Problem with a purchase or transfer": 18,
+        "Problem getting a card or closing an account": 17,
+        "Problem with a company's investigation into an existing issue": 14,
+        "Identity theft protection or other monitoring services": 9,
+        "Trouble using the card": 8,
+        "Threatened to contact someone or share information improperly": 7,
+        "Getting a loan": 4,
+        "Struggling to repay your loan": 4,
+        "Advertising": 3,
+        "Problem with an overdraft": 1,
+        "Problem with overdraft": 1
+      }
+    },
+    "Sub-issue": {
+      "unique_count": 178,
+      "most_frequent": "Credit card company isn't resolving a dispute about a purchase on your statement",
+      "most_frequent_count": 1257,
+      "least_frequent": "Trouble with how payments are being handled",
+      "least_frequent_count": 1,
+      "imbalance_ratio": 1257.0,
+      "singletons_count": 14,
+      "classes": {
+        "Credit card company isn't resolving a dispute about a purchase on your statement": 1257,
+        "Company closed your account": 890,
+        "Deposits and withdrawals": 668,
+        "Problem using a debit or ATM card": 511,
+        "Card was charged for something you did not purchase with the card": 494,
+        "Transaction was not authorized": 463,
+        "Information belongs to someone else": 459,
+        "Credit inquiries on your report that you don't recognize": 359,
+        "Their investigation did not fix an error on your report": 309,
+        "Other problem": 305,
+        "Account status incorrect": 301,
+        "Funds not handled or disbursed as instructed": 286,
+        "Problem with fees": 278,
+        "Banking errors": 255,
+        "Account information incorrect": 235,
+        "Didn't receive advertised or promotional terms": 233,
+        "Problem with rewards from credit card": 215,
+        "Funds not received from closed account": 213,
+        "Overdrafts and overdraft fees": 172,
+        "Application denied": 171,
+        "Fee problem": 169,
+        "Problem during payment process": 164,
+        "Problem accessing account": 153,
+        "Problem making or receiving payments": 152,
+        "Can't close your account": 150,
+        "Unable to open an account": 144,
+        "Charged too much interest": 143,
+        "Card opened as result of identity theft or fraud": 131,
+        "Confusing or misleading advertising about the credit card": 130,
+        "Non-sufficient funds and associated fees": 116,
+        "Didn't receive terms that were advertised": 114,
+        "Debt was paid": 107,
+        "Problem with customer service": 99,
+        "Billing problem": 99,
+        "Can't use card to make purchases": 95,
+        "Reporting company used your report improperly": 91,
+        "Debt is not yours": 86,
+        "Attempted to collect wrong amount": 80,
+        "Money was taken from your account on the wrong day or for the wrong amount": 80,
+        "Credit card company won't work with you while you're going through financial hardship": 77,
+        "Debt was result of identity theft": 77,
+        "Credit card company won't increase or decrease your credit limit": 76,
+        "Problem with personal statement of dispute": 75,
+        "Account opened as a result of fraud": 72,
+        "Frequent or repeated calls": 71,
+        "You never received your bill or did not know a payment was due": 70,
+        "Cashing a check": 65,
+        "Unexpected increase in interest rate": 62,
+        "Didn't receive enough information to verify debt": 61,
+        "Difficulty submitting a dispute or getting information about a dispute over the phone": 61,
+        "Debt is not mine": 58,
+        "Old information reappears or never goes away": 56,
+        "Overcharged for something you did purchase with the card": 50,
+        "Add-on products and services": 47,
+        "Sent card you never applied for": 45,
+        "Can't stop withdrawals from your account": 41,
+        "Problem with balance transfer": 37,
+        "Unable to receive car title or other problem after the loan is paid off": 35,
+        "Problem with paying off the loan": 35,
+        "Investigation took more than 30 days": 35,
+        "Not given enough info to verify debt": 35,
+        "Was not notified of investigation status or results": 34,
+        "Threatened to sue you for very old debt": 31,
+        "Delay in processing application": 31,
+        "Information is missing that should be on the report": 28,
+        "Seized or attempted to seize your property": 28,
+        "Billing dispute for services": 26,
+        "Threatened or suggested your credit would be damaged": 25,
+        "Bounced checks or returned payments": 24,
+        "Excess mileage, damage, or wear fees, or other problem after the lease is finish": 24,
+        "Confusing or missing disclosures": 24,
+        "Didn't receive notice of right to dispute": 23,
+        "Threatened to sue on too old debt": 23,
+        "Privacy issues": 22,
+        "Problem with fees charged": 21,
+        "Can't get flexible payment options": 21,
+        "Public record information inaccurate": 21,
+        "Trouble with how payments are handled": 21,
+        "Denied request to lower payments": 20,
+        "Debt resulted from identity theft": 20,
+        "You told them to stop contacting you, but they keep trying": 19,
+        "Lender trying to repossess or disable the vehicle": 19,
+        "Credit card company forcing arbitration": 18,
+        "Other problem getting your report or credit score": 18,
+        "Personal information incorrect": 17,
+        "Debt was discharged in bankruptcy": 16,
+        "Fees charged for closing account": 16,
+        "Received bad information about my loan": 16,
+        "Debt was already discharged in bankruptcy and is no longer owed": 15,
+        "Loan balance remaining after the vehicle is repossessed and sold": 15,
+        "Having problems with customer service": 15,
+        "Talked to a third party about my debt": 13,
+        "Card company isn't resolving a dispute about a purchase or transfer": 13,
+        "Right to dispute notice not received": 13,
+        "Seized/Attempted to seize property": 13,
+        "Problem with product or service terms changing": 12,
+        "Problem when attempting to purchase vehicle at the end of the lease": 11,
+        "Problem getting a working replacement card": 11,
+        "Problem with additional products or services purchased with the loan": 11,
+        "Problem while selling or giving up the vehicle": 10,
+        "Fraudulent loan": 10,
+        "Problem canceling credit monitoring or identify theft protection service": 10,
+        "Trouble closing card": 10,
+        "Can't decrease my monthly payments": 10,
+        "Received bad information about your loan": 10,
+        "Threatened to take legal action": 10,
+        "Problem related to refinancing": 9,
+        "Notification didn't disclose it was an attempt to collect a debt": 9,
+        "Termination fees or other problem when ending the lease early": 9,
+        "Late or other fees": 8,
+        "Deposits or withdrawals": 8,
+        "Threatened to arrest you or take you to jail if you do not pay": 8,
+        "Don't agree with fees charged": 8,
+        "Trouble using the card to spend money in a store or online": 7,
+        "Received unsolicited financial product or insurance offers after opting out": 7,
+        "Used obscene, profane, or other abusive language": 7,
+        "Report provided to employer without your written authorization": 7,
+        "Sued you without properly notifying you of lawsuit": 7,
+        "Information is incorrect": 7,
+        "Can't temporarily postpone payments": 7,
+        "Problem with cash advances": 6,
+        "Indicated committed crime not paying": 6,
+        "Called after sent written cease of comm": 6,
+        "Need information about my balance/terms": 6,
+        "Need information about your loan balance or loan terms": 5,
+        "Problem with convenience check": 5,
+        "Talked to a third-party about your debt": 5,
+        "Indicated you were committing crime by not paying debt": 5,
+        "Sued w/o proper notification of suit": 5,
+        "Threatened arrest/jail if do not pay": 5,
+        "Collected or attempted to collect exempt funds": 4,
+        "Used obscene/profane/abusive language": 4,
+        "Contacted me after I asked not to": 4,
+        "Didn't receive services that were advertised": 4,
+        "Impersonated attorney, law enforcement, or government official": 4,
+        "Can't get other flexible options for repaying your loan": 4,
+        "Problem with the interest rate": 4,
+        "Credit denial": 4,
+        "Confusing or misleading advertising or marketing": 4,
+        "Indicated shouldn't respond to lawsuit": 4,
+        "Problem lowering your monthly payments": 3,
+        "Charged for a purchase or transfer you did not make with the card": 3,
+        "Received unwanted marketing or advertising": 3,
+        "Trouble getting, activating, or registering a card": 3,
+        "Impersonated an attorney or official": 3,
+        "Called before 8am or after 9pm": 3,
+        "Account sold or transferred to another company": 3,
+        "Keep getting calls about my loan": 3,
+        "Not disclosed as an attempt to collect": 3,
+        "Attempted to/Collected exempt funds": 3,
+        "Don't want a card provided by your employer or the government": 2,
+        "Sued you in a state where you do not live or did not sign for the debt": 2,
+        "Don't agree with the fees charged": 2,
+        "Confusing or misleading advertising about the card": 2,
+        "Trouble getting a working replacement card": 2,
+        "Problem after you declared or threatened to declare bankruptcy": 2,
+        "Overcharged for a purchase or transfer you did make with the card": 2,
+        "Called outside of 8am-9pm": 2,
+        "Loan sold or transferred to another company": 2,
+        "Overdraft charges": 2,
+        "Can't qualify for a loan": 2,
+        "Filed for bankruptcy": 2,
+        "Contacted your employer": 2,
+        "Problem with fees or penalties": 2,
+        "Problem with additional add-on products or services purchased with the loan": 1,
+        "Information that should be on the report is missing": 1,
+        "Problem extending the lease": 1,
+        "Problem using the card to withdraw money from an ATM": 1,
+        "Problem getting your free annual credit report": 1,
+        "Contacted employer after asked not to": 1,
+        "Problem with a trade-in": 1,
+        "Changes in terms mid-deal or after closing": 1,
+        "Told you not to respond to a lawsuit they filed against you": 1,
+        "Sued where didn't live/sign for debt": 1,
+        "Changes in terms from what was offered or advertised": 1,
+        "Contacted me instead of my attorney": 1,
+        "Qualify for a better loan than offered": 1,
+        "Trouble with how payments are being handled": 1
+      }
+    }
+  },
+  "hierarchy_metrics": {
+    "total_unique_full_paths": 451,
+    "subproducts_with_multiple_products": {
+      "Non-federal student loan": 2
+    },
+    "issues_with_multiple_subproducts_count": 39,
+    "subissues_with_multiple_issues_count": 15
+  }
+}

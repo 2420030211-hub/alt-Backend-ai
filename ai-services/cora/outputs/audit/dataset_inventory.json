@@ -1,0 +1,256 @@
+[
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\complaints_cleaned.csv",
+    "filename": "complaints_cleaned.csv",
+    "size_bytes": 19148274,
+    "sha256": "f742045fa08bbb50da2df425e1ef52aed212a6b2f39273e945bed8a5d2384f7f",
+    "mtime": "2026-10-27T16:12:44.877460",
+    "approx_rows": 12710,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text"
+    ],
+    "family": "CORA Real CFPB Narrative Dataset (CFPB Complaint Narratives + Full Hierarchy)",
+    "provenance": "Verified CFPB consumer complaint narratives with 4-level hierarchy",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\output_cleaned.csv",
+    "filename": "output_cleaned.csv",
+    "size_bytes": 19148274,
+    "sha256": "f742045fa08bbb50da2df425e1ef52aed212a6b2f39273e945bed8a5d2384f7f",
+    "mtime": "2026-10-27T16:13:58.269298",
+    "approx_rows": 12710,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text"
+    ],
+    "family": "CORA Real CFPB Narrative Dataset (CFPB Complaint Narratives + Full Hierarchy)",
+    "provenance": "Verified CFPB consumer complaint narratives with 4-level hierarchy",
+    "is_duplicate_of": "C:/Users/M S I/Downloads/complaints_cleaned.csv"
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\cora_train.csv",
+    "filename": "cora_train.csv",
+    "size_bytes": 15261708,
+    "sha256": "5af1dde1df9a022c77e0d05425077cdc44876ab4cf0ff733c10bfa9eb3cc8382",
+    "mtime": "2026-10-27T16:14:12.005503",
+    "approx_rows": 10157,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text"
+    ],
+    "family": "CORA Real CFPB Narrative Dataset (CFPB Complaint Narratives + Full Hierarchy)",
+    "provenance": "Verified CFPB consumer complaint narratives with 4-level hierarchy",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\cora_validation.csv",
+    "filename": "cora_validation.csv",
+    "size_bytes": 3877871,
+    "sha256": "b82f002d509d3e7cbb4bfe05b74283517a868d095ac39efd73af010c569685d5",
+    "mtime": "2026-10-27T16:13:51.887520",
+    "approx_rows": 2540,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text"
+    ],
+    "family": "CORA Real CFPB Narrative Dataset (CFPB Complaint Narratives + Full Hierarchy)",
+    "provenance": "Verified CFPB consumer complaint narratives with 4-level hierarchy",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\train_cleaned.csv",
+    "filename": "train_cleaned.csv",
+    "size_bytes": 1710232,
+    "sha256": "a0090d0eeb19b50cc2181c71ed40acee4db97e3d73707aec06960aa1215734b4",
+    "mtime": "2026-10-27T16:14:07.160232",
+    "approx_rows": 9999,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\test_cleaned.csv",
+    "filename": "test_cleaned.csv",
+    "size_bytes": 505543,
+    "sha256": "cb81130052765e505f5ce143ff20119270dc46cc7c4ed8e1459a1a027eac5cce",
+    "mtime": "2026-10-27T16:14:02.112850",
+    "approx_rows": 3079,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\complaints.csv",
+    "filename": "complaints.csv",
+    "size_bytes": 152201356,
+    "sha256": "02be1a194bf8db9cd918a56b08323c8e37dce53d8e93d1231787c882e78e631b",
+    "mtime": "2026-08-06T10:38:26",
+    "approx_rows": 1048575,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue"
+    ],
+    "family": "Taxonomy Reference / Label-Only CFPB Dataset (No complaint narratives)",
+    "provenance": "Verified CFPB metadata table without text",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\complaints_cleaned.csv",
+    "filename": "complaints_cleaned.csv",
+    "size_bytes": 143365,
+    "sha256": "76ea31fe6be660c35655099c97d8f9c5113866c604b987eb97f5212d162178c7",
+    "mtime": "2026-08-25T22:15:41",
+    "approx_rows": 1166,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue"
+    ],
+    "family": "Taxonomy Reference / Label-Only CFPB Dataset (No complaint narratives)",
+    "provenance": "Verified CFPB metadata table without text",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\output.csv",
+    "filename": "output.csv",
+    "size_bytes": 7336073,
+    "sha256": "ac03cef80cfd033228aa18af200b78aea480fd5a295760115fdb819beb88beeb",
+    "mtime": "2026-08-25T20:36:18",
+    "approx_rows": 78313,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue"
+    ],
+    "family": "Taxonomy Reference / Label-Only CFPB Dataset (No complaint narratives)",
+    "provenance": "Verified CFPB metadata table without text",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\output_cleaned.csv",
+    "filename": "output_cleaned.csv",
+    "size_bytes": 72110,
+    "sha256": "cfc38f25d801fa8991aaee24a7cf7cf0fb467ba9d862a103494898d2e453650b",
+    "mtime": "2026-08-25T22:15:41",
+    "approx_rows": 588,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue"
+    ],
+    "family": "Taxonomy Reference / Label-Only CFPB Dataset (No complaint narratives)",
+    "provenance": "Verified CFPB metadata table without text",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\train.csv",
+    "filename": "train.csv",
+    "size_bytes": 1711417,
+    "sha256": "0348cfffb6e3b1654f3581793c837afe0a66507224657d3fa3e43e8dde005367",
+    "mtime": "2026-08-25T20:35:41",
+    "approx_rows": 10016,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\train_cleaned.csv",
+    "filename": "train_cleaned.csv",
+    "size_bytes": 1710232,
+    "sha256": "a0090d0eeb19b50cc2181c71ed40acee4db97e3d73707aec06960aa1215734b4",
+    "mtime": "2026-08-25T22:15:41",
+    "approx_rows": 9999,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": "C:/Users/M S I/Downloads/train_cleaned.csv"
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\test.csv",
+    "filename": "test.csv",
+    "size_bytes": 505797,
+    "sha256": "f5dc89f35c2cdb616643c89d6f62aca487861a2e11a2721da807eaca0443c6a6",
+    "mtime": "2026-08-25T20:36:34",
+    "approx_rows": 3084,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": null
+  },
+  {
+    "path": "C:\\Users\\M S I\\Downloads\\ComplaintManagement\\ComplaintManagement\\test_cleaned.csv",
+    "filename": "test_cleaned.csv",
+    "size_bytes": 505543,
+    "sha256": "cb81130052765e505f5ce143ff20119270dc46cc7c4ed8e1459a1a027eac5cce",
+    "mtime": "2026-08-25T22:15:41",
+    "approx_rows": 3079,
+    "columns": [
+      "Product",
+      "Sub-product",
+      "Issue",
+      "Sub-issue",
+      "text",
+      "category"
+    ],
+    "family": "Short-Text Intent Dataset (Banking77-derived with mapped CFPB taxonomy)",
+    "provenance": "Partially verified (Banking77 format with synthetic/mapped CFPB hierarchy)",
+    "is_duplicate_of": "C:/Users/M S I/Downloads/test_cleaned.csv"
+  }
+]

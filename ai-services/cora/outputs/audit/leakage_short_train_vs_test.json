@@ -1,0 +1,147 @@
+{
+  "comparison": "short_train_vs_test",
+  "set1_file": "C:\\Users\\M S I\\Downloads\\train_cleaned.csv",
+  "set1_total_rows": 9999,
+  "set1_unique_texts": 9999,
+  "set2_file": "C:\\Users\\M S I\\Downloads\\test_cleaned.csv",
+  "set2_total_rows": 3079,
+  "set2_unique_texts": 3079,
+  "exact_raw_overlap_count": 7,
+  "normalized_overlap_count": 7,
+  "overlap_percentage_of_set2": 0.2273,
+  "overlap_samples": [
+    {
+      "normalized_snippet": "at which atms can i use this card?",
+      "set1_indices": [
+        4574
+      ],
+      "set2_indices": [
+        1473
+      ],
+      "set1_labels": [
+        {
+          "Product": "Checking or savings account"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Checking or savings account"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "how do i unblock my pin?",
+      "set1_indices": [
+        1721
+      ],
+      "set2_indices": [
+        554
+      ],
+      "set1_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "i don't live in the uk. can i still get a card?",
+      "set1_indices": [
+        9917
+      ],
+      "set2_indices": [
+        3069
+      ],
+      "set1_labels": [
+        {
+          "Product": "Checking or savings account"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Checking or savings account"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "which cash machines will allow me to change my pin?",
+      "set1_indices": [
+        6980
+      ],
+      "set2_indices": [
+        2148
+      ],
+      "set1_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "what businesses accept this card?",
+      "set1_indices": [
+        3101
+      ],
+      "set2_indices": [
+        976
+      ],
+      "set1_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "where can i use my card?",
+      "set1_indices": [
+        3114
+      ],
+      "set2_indices": [
+        977
+      ],
+      "set1_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ]
+    },
+    {
+      "normalized_snippet": "there are a few transaction that i don't recognize, i think someone managed to get my card details a",
+      "set1_indices": [
+        4474
+      ],
+      "set2_indices": [
+        1432
+      ],
+      "set1_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ],
+      "set2_labels": [
+        {
+          "Product": "Credit card or prepaid card"
+        }
+      ]
+    }
+  ]
+}

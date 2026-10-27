@@ -1,0 +1,63 @@
+{
+  "source_dataset": "C:\\Users\\M S I\\Downloads\\complaints_cleaned.csv",
+  "total_records": 12710,
+  "total_unique_paths": 451,
+  "single_occurrence_paths": 122,
+  "product_count": 6,
+  "subproduct_count": 31,
+  "issue_count": 46,
+  "subissue_count": 178,
+  "product_to_subproducts": {
+    "Checking or savings account": [
+      "CD (Certificate of Deposit)",
+      "Checking account",
+      "Other banking product or service",
+      "Personal line of credit",
+      "Savings account"
+    ],
+    "Credit card or prepaid card": [
+      "General-purpose credit card or charge card",
+      "General-purpose prepaid card",
+      "Gift card",
+      "Government benefit card",
+      "Payroll card",
+      "Store credit card"
+    ],
+    "Credit reporting, credit repair services, or other personal consumer reports": [
+      "Credit reporting",
+      "Other personal consumer report"
+    ],
+    "Debt collection": [
+      "Auto",
+      "Auto debt",
+      "Credit card",
+      "Credit card debt",
+      "Federal student loan",
+      "I do not know",
+      "Mortgage",
+      "Mortgage debt",
+      "Non-federal student loan",
+      "Other (i.e. phone, health club, etc.)",
+      "Other debt",
+      "Payday loan",
+      "Payday loan debt",
+      "Private student loan debt"
+    ],
+    "Student loan": [
+      "Federal student loan servicing",
+      "Non-federal student loan",
+      "Private student loan"
+    ],
+    "Vehicle loan or lease": [
+      "Lease",
+      "Loan"
+    ]
+  },
+  "subproducts_with_multiple_parent_products": {
+    "Non-federal student loan": [
+      "Student loan",
+      "Debt collection"
+    ]
+  },
+  "issues_with_multiple_parent_subproducts_count": 39
+}

@@ -1,0 +1,35 @@
+﻿node_modules/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Checkpoints and models
+*.pt
+*.bin
+*.safetensors
+artifacts/cora/checkpoints/
+artifacts/qwen/checkpoints/
+artifacts/qwen/adapter/
+
+# Datasets raw files
+datasets/cora/*.csv
+!datasets/cora/sample_cora.csv
+datasets/banking_qa/*.jsonl
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Large or Sensitive Data & Outputs
+*.csv
+!ai-services/cora/tests/*.csv
+outputs/baseline/*.joblib
+*.joblib
+

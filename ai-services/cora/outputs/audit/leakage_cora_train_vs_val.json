@@ -1,0 +1,13 @@
+{
+  "comparison": "cora_train_vs_val",
+  "set1_file": "C:\\Users\\M S I\\Downloads\\cora_train.csv",
+  "set1_total_rows": 10157,
+  "set1_unique_texts": 10157,
+  "set2_file": "C:\\Users\\M S I\\Downloads\\cora_validation.csv",
+  "set2_total_rows": 2540,
+  "set2_unique_texts": 2540,
+  "exact_raw_overlap_count": 0,
+  "normalized_overlap_count": 0,
+  "overlap_percentage_of_set2": 0.0,
+  "overlap_samples": []
+}

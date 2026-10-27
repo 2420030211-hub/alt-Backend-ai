@@ -1,0 +1,10 @@
+﻿fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+pydantic-settings>=2.2.0
+torch>=2.2.0; sys_platform != 'darwin'
+transformers>=4.38.0
+accelerate>=0.28.0
+peft>=0.10.0
+pytest>=8.0.0
+requests>=2.31.0
