@@ -1,0 +1,107 @@
+id: runpodctl
+name: runpodctl
+kind: tool
+summary: >
+  Runpod's command-line tool for managing pods, Serverless endpoints, templates,
+  network volumes and models from a terminal, CI job or script. It also covers
+  Hub deploys, SSH keys, `send`/`receive` file transfer and `doctor` setup.
+product: null
+is_a: null
+part_of: runpod-platform
+aliases: [Runpod CLI, runpod CLI, runpodctl CLI]
+
+surfaces:
+  runpodctl: [pod create, serverless create, template create, network-volume create, hub search, send, receive, doctor, update, version]
+
+relations:
+  - { type: requires, target: api-key, cardinality: "1" }
+  - { type: uses, target: pod, cardinality: "0..n" }
+  - { type: uses, target: serverless-endpoint, cardinality: "0..n" }
+  - { type: uses, target: template, cardinality: "0..n" }
+  - { type: uses, target: network-volume, cardinality: "0..n" }
+  - { type: uses, target: hub-repo, cardinality: "0..n" }
+
+rules:
+  - id: runpodctl.project-sdk-notice
+    statement: >
+      Use the Runpod SDK for serverless development workflows on every CLI
+      version. In builds containing the unreleased runpod/runpodctl#382,
+      `runpodctl project` invocations (including subcommands, aliases and flags)
+      and supported help forms such as `project --help`, `help project`, `-h
+      project` and `--help project` exit 1 with empty stdout and a plain-text
+      Runpod SDK notice on stderr. Treat this as a fatal error, surface the
+      notice verbatim and do not retry or require a JSON error code.
+    status: documented
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/reference/output-and-errors.md, note: Project Runpod SDK notice. }
+
+  - id: runpodctl.project-released-compatibility
+    statement: >
+      In released versions through v3.0.1, `project` runtime errors print to
+      stdout and exit 0, so inspect the output rather than trusting a zero exit
+      status. Check `runpodctl version`, but verify the commit for source or
+      custom builds before assuming the runpod/runpodctl#382 notice contract
+      because their version string can match a released version. These
+      compatibility facts do not change the recommendation to use the Runpod
+      SDK.
+    status: documented
+    see: [runpodctl.project-sdk-notice]
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/reference/output-and-errors.md, note: Released-version compatibility. }
+
+  - id: runpodctl.ssh-host-key-compatibility
+    statement: >
+      In v2.14.0 and earlier, the deprecated `project` and `exec python` SSH
+      paths disable host key checking. Host key pinning applies to `exec python`
+      in v2.15.0+ and to legacy `project` SSH in v2.15.0 through v3.0.1; in
+      builds containing runpod/runpodctl#382, `project` only emits the SDK
+      notice and opens no SSH connection. Check `runpodctl version` before
+      relying on pinning, and use the Runpod SDK for serverless development
+      regardless of CLI version.
+    status: documented
+    see: [runpodctl.project-sdk-notice]
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/reference/command-reference.md, note: Pod host key trust. }
+
+  - id: runpodctl.update-first
+    statement: >
+      Older `runpodctl` builds lack newer flags and fail with confusing errors;
+      `--model-reference` needs v2.4.0 or later. Check `runpodctl version`, run
+      `runpodctl update` before starting, and keep one version for the whole
+      task.
+    status: documented
+    see: [model-store.attach-by-reference]
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/SKILL.md, note: Install section. }
+
+  - id: runpodctl.help-is-authoritative
+    statement: >
+      The command surface comes from the installed binary. Read `runpodctl
+      <resource> <action> --help` for the flags a command accepts, rather than
+      relying on a list written for another version.
+    status: documented
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/SKILL.md, note: Install section. }
+      - { source: skill, path: plugins/runpod/skills/runpod/SKILL.md, note: "These skills are a snapshot; the tools are the source of truth." }
+
+  - id: runpodctl.credential-resolution
+    statement: >
+      `runpodctl` reads the API key from `RUNPOD_API_KEY`, then a `.env` file,
+      then `~/.runpod/config.toml`. `flash login` saves a key to that file, so
+      one key serves `runpodctl` and Flash, and the same key can be sent to the
+      hosted MCP server as a Bearer token.
+    status: documented
+    see: [api-key.bearer-only]
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpod/SKILL.md, note: First run section. }
+
+  - id: runpodctl.beyond-crud
+    statement: >
+      Besides managing the same resources as the REST API, `runpodctl` browses
+      and deploys Hub repos, manages SSH keys, transfers files with `send` and
+      `receive`, sets up a machine with `doctor` and manages cached models.
+    status: documented
+    see: [file-transfer.send-receive]
+    evidence:
+      - { source: skill, path: plugins/runpod/skills/runpodctl/SKILL.md }
+      - { source: skill, path: plugins/runpod/skills/runpod/SKILL.md, note: The lanes table. }
