@@ -1,4 +1,4 @@
-﻿"""
+"""
 Generate comprehensive Markdown and JSON review reports for CORA data audit,
 leakage investigation, baseline classification status, and BERT/ModernBERT experiment preparation.
 """
@@ -67,13 +67,40 @@ def generate_report(audit_dir="ai-services/cora/outputs/audit", report_path="rep
     lines.append(f"- **`train_cleaned.csv` vs `test_cleaned.csv`**: Exactly **{leakage_short['exact_raw_overlap_count']}** overlapping queries verified (e.g. `'What businesses accept this card?'`, `'Where can I use my card?'`).")
     lines.append("- **Class Stratification Note**: In `cora_validation.csv`, 4 rare Sub-issue classes occur that have 0 support in `cora_train.csv` (e.g., `'Problem extending the lease'`). Re-stratification is recommended before final training.")
 
-    lines.append("\n## E. Baseline Classification Status and Environment Blocker")
+    # Read baseline if exists
+    baseline_file = os.path.join("ai-services/cora/outputs/baseline", "baseline_metrics.json")
+    baseline_data = None
+    if os.path.exists(baseline_file):
+        with open(baseline_file, "r", encoding="utf-8") as f:
+            baseline_data = json.load(f)
+
+    lines.append("\n## E. Baseline Classification Status and Verified Execution Metrics")
     lines.append("- **Implemented Script**: `ai-services/cora/scripts/train_tfidf_svm_baseline.py`")
-    lines.append("- **Execution Blocker**: The system environment enforces a strict Windows Application Control policy that blocks unsigned or user-space compiled DLLs (`_radius_neighbors_classmode.pyd` and `_check_build.pyd`).")
-    lines.append("- **Resolution Command**: To run the baseline in an approved administrator environment or container, use:")
-    lines.append("  ```powershell")
-    lines.append("  py -3.13 ai-services/cora/scripts/train_tfidf_svm_baseline.py \"C:/Users/M S I/Downloads/cora_train.csv\" \"C:/Users/M S I/Downloads/cora_validation.csv\" \"ai-services/cora/outputs/baseline\"")
-    lines.append("  ```")
+    if baseline_data:
+        lines.append("- **Execution Status**: **Successfully Executed**.")
+        lines.append(f"- **Dataset**: `cora_train.csv` ({baseline_data.get('train_set_size', 10157):,} samples) & `cora_validation.csv` ({baseline_data.get('validation_set_size', 2540):,} samples).")
+        lines.append("- **Vectorizer**: TF-IDF (15,000 max features, n-grams (1, 2), sublinear TF, English stop words).")
+        lines.append("- **Target Metrics Summary**:")
+        lines.append("  | Target | Classes (Train / Val) | Accuracy | Macro-F1 | Weighted-F1 | Macro-Precision | Macro-Recall |")
+        lines.append("  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |")
+        for tgt, m in baseline_data.get("targets", {}).items():
+            lines.append(f"  | **{tgt}** | {m['train_classes_count']} / {m['val_classes_count']} | **{m['accuracy']*100:.2f}%** | **{m['macro_f1']:.4f}** | {m['weighted_f1']:.4f} | {m['macro_precision']:.4f} | {m['macro_recall']:.4f} |")
+        
+        em = baseline_data.get("overall_exact_match", {})
+        hc = baseline_data.get("hierarchy_consistency", {})
+        lines.append("- **Holistic Hierarchy Performance**:")
+        lines.append(f"  - **4-Target Exact Match Accuracy**: **{em.get('exact_match_accuracy', 0)*100:.2f}%** ({em.get('exact_matches_count', 0):,} / {em.get('eligible_rows', 0):,} validation narratives predicted all 4 levels perfectly).")
+        lines.append(f"  - **Raw Prediction Hierarchical Path Consistency**: **{hc.get('consistency_rate', 0)*100:.2f}%** ({hc.get('consistent_predictions_count', 0):,} / {baseline_data.get('validation_set_size', 2540):,} predictions formed a valid path in the hierarchy without post-processing).")
+        lines.append("- **Saved Baseline Artifacts** (`ai-services/cora/outputs/baseline/`):")
+        lines.append("  - `baseline_metrics.json`")
+        lines.append("  - `tfidf_vectorizer.joblib`")
+        lines.append("  - `linear_svc_Product.joblib`")
+        lines.append("  - `linear_svc_Sub_product.joblib`")
+        lines.append("  - `linear_svc_Issue.joblib`")
+        lines.append("  - `linear_svc_Sub_issue.joblib`")
+        lines.append("  - `report_Product.csv`, `report_Sub_product.csv`, `report_Issue.csv`, `report_Sub_issue.csv`")
+    else:
+        lines.append("- **Execution Status**: Pending execution.")
 
     lines.append("\n## F. BERT & ModernBERT Experiment Preparation")
     lines.append("- **BERT Configuration**: `ai-services/cora/configs/bert_base.json` (max seq len 256, batch size 16, lr 3e-5)")

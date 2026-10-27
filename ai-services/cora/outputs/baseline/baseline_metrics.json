@@ -61,10 +61,10 @@
       "train_classes_count": 174,
       "val_classes_count": 147,
       "unseen_in_train_classes": [
-        "Problem with additional add-on products or services purchased with the loan",
         "Problem with fees or penalties",
-        "Qualify for a better loan than offered",
-        "Problem extending the lease"
+        "Problem with additional add-on products or services purchased with the loan",
+        "Problem extending the lease",
+        "Qualify for a better loan than offered"
       ],
       "confusion_matrix_shape": [
         178,
