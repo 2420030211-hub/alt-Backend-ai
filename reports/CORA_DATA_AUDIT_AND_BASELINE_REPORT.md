@@ -44,13 +44,29 @@
 - **`train_cleaned.csv` vs `test_cleaned.csv`**: Exactly **7** overlapping queries verified (e.g. `'What businesses accept this card?'`, `'Where can I use my card?'`).
 - **Class Stratification Note**: In `cora_validation.csv`, 4 rare Sub-issue classes occur that have 0 support in `cora_train.csv` (e.g., `'Problem extending the lease'`). Re-stratification is recommended before final training.
 
-## E. Baseline Classification Status and Environment Blocker
+## E. Baseline Classification Status and Verified Execution Metrics
 - **Implemented Script**: `ai-services/cora/scripts/train_tfidf_svm_baseline.py`
-- **Execution Blocker**: The system environment enforces a strict Windows Application Control policy that blocks unsigned or user-space compiled DLLs (`_radius_neighbors_classmode.pyd` and `_check_build.pyd`).
-- **Resolution Command**: To run the baseline in an approved administrator environment or container, use:
-  ```powershell
-  py -3.13 ai-services/cora/scripts/train_tfidf_svm_baseline.py "C:/Users/M S I/Downloads/cora_train.csv" "C:/Users/M S I/Downloads/cora_validation.csv" "ai-services/cora/outputs/baseline"
-  ```
+- **Execution Status**: **Successfully Executed**.
+- **Dataset**: `cora_train.csv` (10,157 samples) & `cora_validation.csv` (2,540 samples).
+- **Vectorizer**: TF-IDF (15,000 max features, n-grams (1, 2), sublinear TF, English stop words).
+- **Target Metrics Summary**:
+  | Target | Classes (Train / Val) | Accuracy | Macro-F1 | Weighted-F1 | Macro-Precision | Macro-Recall |
+  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+  | **Product** | 6 / 6 | **84.41%** | **0.7659** | 0.8410 | 0.8313 | 0.7234 |
+  | **Sub-product** | 31 / 27 | **77.72%** | **0.2797** | 0.7494 | 0.3884 | 0.2475 |
+  | **Issue** | 46 / 42 | **59.06%** | **0.3249** | 0.5707 | 0.3863 | 0.3009 |
+  | **Sub-issue** | 174 / 147 | **43.70%** | **0.1876** | 0.4004 | 0.2099 | 0.1889 |
+- **Holistic Hierarchy Performance**:
+  - **4-Target Exact Match Accuracy**: **34.96%** (888 / 2,540 validation narratives predicted all 4 levels perfectly).
+  - **Raw Prediction Hierarchical Path Consistency**: **70.91%** (1,801 / 2,540 predictions formed a valid path in the hierarchy without post-processing).
+- **Saved Baseline Artifacts** (`ai-services/cora/outputs/baseline/`):
+  - `baseline_metrics.json`
+  - `tfidf_vectorizer.joblib`
+  - `linear_svc_Product.joblib`
+  - `linear_svc_Sub_product.joblib`
+  - `linear_svc_Issue.joblib`
+  - `linear_svc_Sub_issue.joblib`
+  - `report_Product.csv`, `report_Sub_product.csv`, `report_Issue.csv`, `report_Sub_issue.csv`
 
 ## F. BERT & ModernBERT Experiment Preparation
 - **BERT Configuration**: `ai-services/cora/configs/bert_base.json` (max seq len 256, batch size 16, lr 3e-5)

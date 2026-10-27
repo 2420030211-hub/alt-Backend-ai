@@ -1,0 +1,85 @@
+{
+  "train_set_size": 10157,
+  "validation_set_size": 2540,
+  "targets": {
+    "Product": {
+      "accuracy": 0.8441,
+      "macro_f1": 0.7659,
+      "weighted_f1": 0.841,
+      "macro_precision": 0.8313,
+      "weighted_precision": 0.844,
+      "macro_recall": 0.7234,
+      "weighted_recall": 0.8441,
+      "train_classes_count": 6,
+      "val_classes_count": 6,
+      "unseen_in_train_classes": [],
+      "confusion_matrix_shape": [
+        6,
+        6
+      ]
+    },
+    "Sub-product": {
+      "accuracy": 0.7772,
+      "macro_f1": 0.2797,
+      "weighted_f1": 0.7494,
+      "macro_precision": 0.3884,
+      "weighted_precision": 0.7435,
+      "macro_recall": 0.2475,
+      "weighted_recall": 0.7772,
+      "train_classes_count": 31,
+      "val_classes_count": 27,
+      "unseen_in_train_classes": [],
+      "confusion_matrix_shape": [
+        31,
+        31
+      ]
+    },
+    "Issue": {
+      "accuracy": 0.5906,
+      "macro_f1": 0.3249,
+      "weighted_f1": 0.5707,
+      "macro_precision": 0.3863,
+      "weighted_precision": 0.5728,
+      "macro_recall": 0.3009,
+      "weighted_recall": 0.5906,
+      "train_classes_count": 46,
+      "val_classes_count": 42,
+      "unseen_in_train_classes": [],
+      "confusion_matrix_shape": [
+        46,
+        46
+      ]
+    },
+    "Sub-issue": {
+      "accuracy": 0.437,
+      "macro_f1": 0.1876,
+      "weighted_f1": 0.4004,
+      "macro_precision": 0.2099,
+      "weighted_precision": 0.3906,
+      "macro_recall": 0.1889,
+      "weighted_recall": 0.437,
+      "train_classes_count": 174,
+      "val_classes_count": 147,
+      "unseen_in_train_classes": [
+        "Problem with additional add-on products or services purchased with the loan",
+        "Problem with fees or penalties",
+        "Qualify for a better loan than offered",
+        "Problem extending the lease"
+      ],
+      "confusion_matrix_shape": [
+        178,
+        178
+      ]
+    }
+  },
+  "overall_exact_match": {
+    "eligible_rows": 2540,
+    "exact_matches_count": 888,
+    "exact_match_accuracy": 0.3496
+  },
+  "hierarchy_consistency": {
+    "valid_train_paths_count": 424,
+    "consistent_predictions_count": 1801,
+    "consistency_rate": 0.7091
+  }
+}
