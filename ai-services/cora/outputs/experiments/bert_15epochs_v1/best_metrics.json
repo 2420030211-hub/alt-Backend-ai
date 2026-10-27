@@ -1,0 +1,25 @@
+{
+  "Product": {
+    "accuracy": 0.8654,
+    "macro_f1": 0.8102,
+    "evaluated_rows": 2540
+  },
+  "Sub-product": {
+    "accuracy": 0.7929,
+    "macro_f1": 0.2232,
+    "evaluated_rows": 2540
+  },
+  "Issue": {
+    "accuracy": 0.6008,
+    "macro_f1": 0.2937,
+    "evaluated_rows": 2540
+  },
+  "Sub-issue": {
+    "accuracy": 0.4288,
+    "macro_f1": 0.1267,
+    "evaluated_rows": 2535
+  },
+  "mean_macro_f1": 0.36344627819800596,
+  "epoch": 12,
+  "train_loss": 0.3406396589410587
+}

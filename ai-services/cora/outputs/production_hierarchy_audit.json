@@ -1,0 +1,13 @@
+{
+  "rows": 10157,
+  "class_counts": {
+    "Product": 6,
+    "Sub-product": 31,
+    "Issue": 46,
+    "Sub-issue": 174
+  },
+  "valid_product_subproduct_pairs": 32,
+  "valid_subproduct_issue_pairs": 157,
+  "valid_issue_subissue_pairs": 189,
+  "valid_full_paths": 424
+}

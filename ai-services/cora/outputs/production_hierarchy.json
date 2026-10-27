@@ -1,0 +1,3827 @@
+{
+  "version": 1,
+  "source": "cora_train.csv",
+  "row_count": 10157,
+  "labels": {
+    "Product": [
+      "Checking or savings account",
+      "Credit card or prepaid card",
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Debt collection",
+      "Student loan",
+      "Vehicle loan or lease"
+    ],
+    "Sub-product": [
+      "Auto",
+      "Auto debt",
+      "CD (Certificate of Deposit)",
+      "Checking account",
+      "Credit card",
+      "Credit card debt",
+      "Credit reporting",
+      "Federal student loan",
+      "Federal student loan servicing",
+      "General-purpose credit card or charge card",
+      "General-purpose prepaid card",
+      "Gift card",
+      "Government benefit card",
+      "I do not know",
+      "Lease",
+      "Loan",
+      "Mortgage",
+      "Mortgage debt",
+      "Non-federal student loan",
+      "Other (i.e. phone, health club, etc.)",
+      "Other banking product or service",
+      "Other debt",
+      "Other personal consumer report",
+      "Payday loan",
+      "Payday loan debt",
+      "Payroll card",
+      "Personal line of credit",
+      "Private student loan",
+      "Private student loan debt",
+      "Savings account",
+      "Store credit card"
+    ],
+    "Issue": [
+      "Advertising",
+      "Advertising and marketing, including promotional offers",
+      "Attempts to collect debt not owed",
+      "Can't repay my loan",
+      "Closing an account",
+      "Closing your account",
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Credit monitoring or identity theft protection services",
+      "Dealing with my lender or servicer",
+      "Dealing with your lender or servicer",
+      "Disclosure verification of debt",
+      "False statements or representation",
+      "Fees or interest",
+      "Getting a credit card",
+      "Getting a loan",
+      "Getting a loan or lease",
+      "Identity theft protection or other monitoring services",
+      "Improper contact or sharing of info",
+      "Improper use of your report",
+      "Incorrect information on your report",
+      "Managing an account",
+      "Managing the loan or lease",
+      "Opening an account",
+      "Other features, terms, or problems",
+      "Problem caused by your funds being low",
+      "Problem getting a card or closing an account",
+      "Problem when making payments",
+      "Problem with a company's investigation into an existing issue",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with a lender or other company charging your account",
+      "Problem with a purchase or transfer",
+      "Problem with a purchase shown on your statement",
+      "Problem with an overdraft",
+      "Problem with overdraft",
+      "Problems at the end of the loan or lease",
+      "Struggling to pay your bill",
+      "Struggling to pay your loan",
+      "Struggling to repay your loan",
+      "Taking/threatening an illegal action",
+      "Threatened to contact someone or share information improperly",
+      "Took or threatened to take negative or legal action",
+      "Trouble using the card",
+      "Trouble using your card",
+      "Unable to get your credit report or credit score",
+      "Written notification about debt"
+    ],
+    "Sub-issue": [
+      "Account information incorrect",
+      "Account opened as a result of fraud",
+      "Account sold or transferred to another company",
+      "Account status incorrect",
+      "Add-on products and services",
+      "Application denied",
+      "Attempted to collect wrong amount",
+      "Attempted to/Collected exempt funds",
+      "Banking errors",
+      "Billing dispute for services",
+      "Billing problem",
+      "Bounced checks or returned payments",
+      "Called after sent written cease of comm",
+      "Called before 8am or after 9pm",
+      "Called outside of 8am-9pm",
+      "Can't close your account",
+      "Can't decrease my monthly payments",
+      "Can't get flexible payment options",
+      "Can't get other flexible options for repaying your loan",
+      "Can't qualify for a loan",
+      "Can't stop withdrawals from your account",
+      "Can't temporarily postpone payments",
+      "Can't use card to make purchases",
+      "Card company isn't resolving a dispute about a purchase or transfer",
+      "Card opened as result of identity theft or fraud",
+      "Card was charged for something you did not purchase with the card",
+      "Cashing a check",
+      "Changes in terms from what was offered or advertised",
+      "Changes in terms mid-deal or after closing",
+      "Charged for a purchase or transfer you did not make with the card",
+      "Charged too much interest",
+      "Collected or attempted to collect exempt funds",
+      "Company closed your account",
+      "Confusing or misleading advertising about the card",
+      "Confusing or misleading advertising about the credit card",
+      "Confusing or misleading advertising or marketing",
+      "Confusing or missing disclosures",
+      "Contacted employer after asked not to",
+      "Contacted me after I asked not to",
+      "Contacted me instead of my attorney",
+      "Contacted your employer",
+      "Credit card company forcing arbitration",
+      "Credit card company isn't resolving a dispute about a purchase on your statement",
+      "Credit card company won't increase or decrease your credit limit",
+      "Credit card company won't work with you while you're going through financial hardship",
+      "Credit denial",
+      "Credit inquiries on your report that you don't recognize",
+      "Debt is not mine",
+      "Debt is not yours",
+      "Debt resulted from identity theft",
+      "Debt was already discharged in bankruptcy and is no longer owed",
+      "Debt was discharged in bankruptcy",
+      "Debt was paid",
+      "Debt was result of identity theft",
+      "Delay in processing application",
+      "Denied request to lower payments",
+      "Deposits and withdrawals",
+      "Deposits or withdrawals",
+      "Didn't receive advertised or promotional terms",
+      "Didn't receive enough information to verify debt",
+      "Didn't receive notice of right to dispute",
+      "Didn't receive services that were advertised",
+      "Didn't receive terms that were advertised",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone",
+      "Don't agree with fees charged",
+      "Don't agree with the fees charged",
+      "Don't want a card provided by your employer or the government",
+      "Excess mileage, damage, or wear fees, or other problem after the lease is finish",
+      "Fee problem",
+      "Fees charged for closing account",
+      "Filed for bankruptcy",
+      "Fraudulent loan",
+      "Frequent or repeated calls",
+      "Funds not handled or disbursed as instructed",
+      "Funds not received from closed account",
+      "Having problems with customer service",
+      "Impersonated an attorney or official",
+      "Impersonated attorney, law enforcement, or government official",
+      "Indicated committed crime not paying",
+      "Indicated shouldn't respond to lawsuit",
+      "Indicated you were committing crime by not paying debt",
+      "Information belongs to someone else",
+      "Information is incorrect",
+      "Information is missing that should be on the report",
+      "Information that should be on the report is missing",
+      "Investigation took more than 30 days",
+      "Keep getting calls about my loan",
+      "Late or other fees",
+      "Lender trying to repossess or disable the vehicle",
+      "Loan balance remaining after the vehicle is repossessed and sold",
+      "Loan sold or transferred to another company",
+      "Money was taken from your account on the wrong day or for the wrong amount",
+      "Need information about my balance/terms",
+      "Need information about your loan balance or loan terms",
+      "Non-sufficient funds and associated fees",
+      "Not disclosed as an attempt to collect",
+      "Not given enough info to verify debt",
+      "Notification didn't disclose it was an attempt to collect a debt",
+      "Old information reappears or never goes away",
+      "Other problem",
+      "Other problem getting your report or credit score",
+      "Overcharged for a purchase or transfer you did make with the card",
+      "Overcharged for something you did purchase with the card",
+      "Overdraft charges",
+      "Overdrafts and overdraft fees",
+      "Personal information incorrect",
+      "Privacy issues",
+      "Problem accessing account",
+      "Problem after you declared or threatened to declare bankruptcy",
+      "Problem canceling credit monitoring or identify theft protection service",
+      "Problem during payment process",
+      "Problem getting a working replacement card",
+      "Problem getting your free annual credit report",
+      "Problem lowering your monthly payments",
+      "Problem making or receiving payments",
+      "Problem related to refinancing",
+      "Problem using a debit or ATM card",
+      "Problem using the card to withdraw money from an ATM",
+      "Problem when attempting to purchase vehicle at the end of the lease",
+      "Problem while selling or giving up the vehicle",
+      "Problem with a trade-in",
+      "Problem with additional products or services purchased with the loan",
+      "Problem with balance transfer",
+      "Problem with cash advances",
+      "Problem with convenience check",
+      "Problem with customer service",
+      "Problem with fees",
+      "Problem with fees charged",
+      "Problem with paying off the loan",
+      "Problem with personal statement of dispute",
+      "Problem with product or service terms changing",
+      "Problem with rewards from credit card",
+      "Problem with the interest rate",
+      "Public record information inaccurate",
+      "Received bad information about my loan",
+      "Received bad information about your loan",
+      "Received unsolicited financial product or insurance offers after opting out",
+      "Received unwanted marketing or advertising",
+      "Report provided to employer without your written authorization",
+      "Reporting company used your report improperly",
+      "Right to dispute notice not received",
+      "Seized or attempted to seize your property",
+      "Seized/Attempted to seize property",
+      "Sent card you never applied for",
+      "Sued w/o proper notification of suit",
+      "Sued where didn't live/sign for debt",
+      "Sued you in a state where you do not live or did not sign for the debt",
+      "Sued you without properly notifying you of lawsuit",
+      "Talked to a third party about my debt",
+      "Talked to a third-party about your debt",
+      "Termination fees or other problem when ending the lease early",
+      "Their investigation did not fix an error on your report",
+      "Threatened arrest/jail if do not pay",
+      "Threatened or suggested your credit would be damaged",
+      "Threatened to arrest you or take you to jail if you do not pay",
+      "Threatened to sue on too old debt",
+      "Threatened to sue you for very old debt",
+      "Threatened to take legal action",
+      "Told you not to respond to a lawsuit they filed against you",
+      "Transaction was not authorized",
+      "Trouble closing card",
+      "Trouble getting a working replacement card",
+      "Trouble getting, activating, or registering a card",
+      "Trouble using the card to spend money in a store or online",
+      "Trouble with how payments are being handled",
+      "Trouble with how payments are handled",
+      "Unable to open an account",
+      "Unable to receive car title or other problem after the loan is paid off",
+      "Unexpected increase in interest rate",
+      "Used obscene, profane, or other abusive language",
+      "Used obscene/profane/abusive language",
+      "Was not notified of investigation status or results",
+      "You never received your bill or did not know a payment was due",
+      "You told them to stop contacting you, but they keep trying"
+    ]
+  },
+  "product_to_subproducts": {
+    "Credit card or prepaid card": [
+      "General-purpose credit card or charge card",
+      "General-purpose prepaid card",
+      "Gift card",
+      "Government benefit card",
+      "Payroll card",
+      "Store credit card"
+    ],
+    "Credit reporting, credit repair services, or other personal consumer reports": [
+      "Credit reporting",
+      "Other personal consumer report"
+    ],
+    "Checking or savings account": [
+      "CD (Certificate of Deposit)",
+      "Checking account",
+      "Other banking product or service",
+      "Personal line of credit",
+      "Savings account"
+    ],
+    "Debt collection": [
+      "Auto",
+      "Auto debt",
+      "Credit card",
+      "Credit card debt",
+      "Federal student loan",
+      "I do not know",
+      "Mortgage",
+      "Mortgage debt",
+      "Non-federal student loan",
+      "Other (i.e. phone, health club, etc.)",
+      "Other debt",
+      "Payday loan",
+      "Payday loan debt",
+      "Private student loan debt"
+    ],
+    "Student loan": [
+      "Federal student loan servicing",
+      "Non-federal student loan",
+      "Private student loan"
+    ],
+    "Vehicle loan or lease": [
+      "Lease",
+      "Loan"
+    ]
+  },
+  "product_subproduct_to_issues": {
+    "[\"Credit card or prepaid card\", \"General-purpose prepaid card\"]": [
+      "Advertising",
+      "Problem getting a card or closing an account",
+      "Problem with a purchase or transfer",
+      "Trouble using the card"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\"]": [
+      "Advertising and marketing, including promotional offers",
+      "Closing your account",
+      "Credit monitoring or identity theft protection services",
+      "Fees or interest",
+      "Getting a credit card",
+      "Improper use of your report",
+      "Incorrect information on your report",
+      "Other features, terms, or problems",
+      "Problem when making payments",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with a purchase shown on your statement",
+      "Struggling to pay your bill",
+      "Trouble using your card",
+      "Unable to get your credit report or credit score"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\"]": [
+      "Credit monitoring or identity theft protection services",
+      "Improper use of your report",
+      "Incorrect information on your report",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Unable to get your credit report or credit score"
+    ],
+    "[\"Checking or savings account\", \"Checking account\"]": [
+      "Closing an account",
+      "Credit monitoring or identity theft protection services",
+      "Improper use of your report",
+      "Incorrect information on your report",
+      "Managing an account",
+      "Opening an account",
+      "Problem caused by your funds being low",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with a lender or other company charging your account"
+    ],
+    "[\"Debt collection\", \"Credit card debt\"]": [
+      "Attempts to collect debt not owed",
+      "Communication tactics",
+      "False statements or representation",
+      "Threatened to contact someone or share information improperly",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Student loan\", \"Private student loan\"]": [
+      "Dealing with your lender or servicer",
+      "Getting a loan",
+      "Incorrect information on your report",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Struggling to repay your loan"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\"]": [
+      "Getting a loan or lease",
+      "Incorrect information on your report",
+      "Managing the loan or lease",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problems at the end of the loan or lease",
+      "Struggling to pay your loan"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\"]": [
+      "Credit monitoring or identity theft protection services",
+      "Getting a loan or lease",
+      "Incorrect information on your report",
+      "Managing the loan or lease",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problems at the end of the loan or lease",
+      "Struggling to pay your loan",
+      "Unable to get your credit report or credit score"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\"]": [
+      "Closing an account",
+      "Credit monitoring or identity theft protection services",
+      "Managing an account",
+      "Opening an account",
+      "Problem caused by your funds being low",
+      "Problem with a lender or other company charging your account"
+    ],
+    "[\"Student loan\", \"Non-federal student loan\"]": [
+      "Can't repay my loan",
+      "Dealing with my lender or servicer",
+      "Getting a loan"
+    ],
+    "[\"Checking or savings account\", \"Savings account\"]": [
+      "Closing an account",
+      "Managing an account",
+      "Opening an account",
+      "Problem caused by your funds being low",
+      "Problem with a lender or other company charging your account"
+    ],
+    "[\"Debt collection\", \"Credit card\"]": [
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Disclosure verification of debt",
+      "False statements or representation",
+      "Improper contact or sharing of info",
+      "Taking/threatening an illegal action"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\"]": [
+      "Attempts to collect debt not owed",
+      "Communication tactics",
+      "False statements or representation",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Debt collection\", \"I do not know\"]": [
+      "Attempts to collect debt not owed",
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Disclosure verification of debt",
+      "False statements or representation",
+      "Improper contact or sharing of info",
+      "Taking/threatening an illegal action",
+      "Threatened to contact someone or share information improperly",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\"]": [
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Disclosure verification of debt",
+      "False statements or representation",
+      "Improper contact or sharing of info",
+      "Taking/threatening an illegal action"
+    ],
+    "[\"Credit card or prepaid card\", \"Gift card\"]": [
+      "Problem getting a card or closing an account",
+      "Problem with a purchase or transfer",
+      "Trouble using the card"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Other personal consumer report\"]": [
+      "Identity theft protection or other monitoring services",
+      "Improper use of your report",
+      "Incorrect information on your report",
+      "Problem with a company's investigation into an existing issue"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\"]": [
+      "Advertising and marketing, including promotional offers",
+      "Closing your account",
+      "Credit monitoring or identity theft protection services",
+      "Fees or interest",
+      "Getting a credit card",
+      "Incorrect information on your report",
+      "Other features, terms, or problems",
+      "Problem when making payments",
+      "Problem with a purchase shown on your statement",
+      "Struggling to pay your bill",
+      "Trouble using your card"
+    ],
+    "[\"Checking or savings account\", \"CD (Certificate of Deposit)\"]": [
+      "Closing an account",
+      "Managing an account",
+      "Opening an account"
+    ],
+    "[\"Debt collection\", \"Federal student loan\"]": [
+      "Improper contact or sharing of info"
+    ],
+    "[\"Debt collection\", \"Other debt\"]": [
+      "Attempts to collect debt not owed",
+      "Communication tactics",
+      "False statements or representation",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Debt collection\", \"Private student loan debt\"]": [
+      "Attempts to collect debt not owed",
+      "False statements or representation",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Debt collection\", \"Mortgage\"]": [
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Disclosure verification of debt",
+      "False statements or representation",
+      "Improper contact or sharing of info",
+      "Taking/threatening an illegal action"
+    ],
+    "[\"Debt collection\", \"Payday loan debt\"]": [
+      "Took or threatened to take negative or legal action"
+    ],
+    "[\"Debt collection\", \"Auto\"]": [
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Disclosure verification of debt",
+      "False statements or representation"
+    ],
+    "[\"Debt collection\", \"Auto debt\"]": [
+      "Attempts to collect debt not owed",
+      "Communication tactics",
+      "False statements or representation",
+      "Threatened to contact someone or share information improperly",
+      "Took or threatened to take negative or legal action",
+      "Written notification about debt"
+    ],
+    "[\"Credit card or prepaid card\", \"Government benefit card\"]": [
+      "Problem getting a card or closing an account",
+      "Problem with a purchase or transfer",
+      "Problem with overdraft"
+    ],
+    "[\"Student loan\", \"Federal student loan servicing\"]": [
+      "Dealing with my lender or servicer",
+      "Dealing with your lender or servicer"
+    ],
+    "[\"Debt collection\", \"Non-federal student loan\"]": [
+      "Communication tactics",
+      "Cont'd attempts collect debt not owed",
+      "Improper contact or sharing of info"
+    ],
+    "[\"Checking or savings account\", \"Personal line of credit\"]": [
+      "Incorrect information on your report"
+    ],
+    "[\"Credit card or prepaid card\", \"Payroll card\"]": [
+      "Problem with an overdraft"
+    ],
+    "[\"Debt collection\", \"Payday loan\"]": [
+      "Improper contact or sharing of info"
+    ]
+  },
+  "product_subproduct_issue_to_subissues": {
+    "[\"Credit card or prepaid card\", \"General-purpose prepaid card\", \"Problem getting a card or closing an account\"]": [
+      "Trouble closing card",
+      "Trouble getting, activating, or registering a card"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Advertising and marketing, including promotional offers\"]": [
+      "Confusing or misleading advertising about the credit card",
+      "Didn't receive advertised or promotional terms"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\", \"Credit monitoring or identity theft protection services\"]": [
+      "Billing dispute for services",
+      "Didn't receive services that were advertised",
+      "Problem canceling credit monitoring or identify theft protection service",
+      "Problem with product or service terms changing"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\", \"Incorrect information on your report\"]": [
+      "Account information incorrect",
+      "Account status incorrect",
+      "Information belongs to someone else",
+      "Information is missing that should be on the report",
+      "Old information reappears or never goes away",
+      "Personal information incorrect",
+      "Public record information inaccurate"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Other features, terms, or problems\"]": [
+      "Add-on products and services",
+      "Credit card company forcing arbitration",
+      "Other problem",
+      "Privacy issues",
+      "Problem with balance transfer",
+      "Problem with cash advances",
+      "Problem with convenience check",
+      "Problem with customer service",
+      "Problem with rewards from credit card"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Closing your account\"]": [
+      "Can't close your account",
+      "Company closed your account"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Problem with a purchase shown on your statement\"]": [
+      "Card was charged for something you did not purchase with the card",
+      "Credit card company isn't resolving a dispute about a purchase on your statement",
+      "Overcharged for something you did purchase with the card"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Managing an account\"]": [
+      "Banking errors",
+      "Cashing a check",
+      "Deposits and withdrawals",
+      "Fee problem",
+      "Funds not handled or disbursed as instructed",
+      "Problem accessing account",
+      "Problem making or receiving payments",
+      "Problem using a debit or ATM card"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Difficulty submitting a dispute or getting information about a dispute over the phone",
+      "Investigation took more than 30 days",
+      "Problem with personal statement of dispute",
+      "Their investigation did not fix an error on your report",
+      "Was not notified of investigation status or results"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Getting a credit card\"]": [
+      "Application denied",
+      "Card opened as result of identity theft or fraud",
+      "Delay in processing application",
+      "Problem getting a working replacement card",
+      "Sent card you never applied for"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount",
+      "Impersonated attorney, law enforcement, or government official",
+      "Indicated you were committing crime by not paying debt",
+      "Told you not to respond to a lawsuit they filed against you"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Problem when making payments\"]": [
+      "Problem during payment process",
+      "You never received your bill or did not know a payment was due"
+    ],
+    "[\"Student loan\", \"Private student loan\", \"Dealing with your lender or servicer\"]": [
+      "Don't agree with the fees charged",
+      "Need information about your loan balance or loan terms",
+      "Problem with customer service",
+      "Received bad information about your loan",
+      "Trouble with how payments are being handled"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Fees or interest\"]": [
+      "Charged too much interest",
+      "Problem with fees",
+      "Unexpected increase in interest rate"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Problems at the end of the loan or lease\"]": [
+      "Excess mileage, damage, or wear fees, or other problem after the lease is finish",
+      "Problem related to refinancing",
+      "Problem when attempting to purchase vehicle at the end of the lease",
+      "Problem while selling or giving up the vehicle",
+      "Problem with paying off the loan",
+      "Termination fees or other problem when ending the lease early",
+      "Unable to receive car title or other problem after the loan is paid off"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Struggling to pay your bill\"]": [
+      "Credit card company won't work with you while you're going through financial hardship",
+      "Filed for bankruptcy",
+      "Problem lowering your monthly payments"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\", \"Improper use of your report\"]": [
+      "Credit inquiries on your report that you don't recognize",
+      "Received unsolicited financial product or insurance offers after opting out",
+      "Report provided to employer without your written authorization",
+      "Reporting company used your report improperly"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Problems at the end of the loan or lease\"]": [
+      "Problem related to refinancing",
+      "Problem while selling or giving up the vehicle",
+      "Problem with paying off the loan",
+      "Unable to receive car title or other problem after the loan is paid off"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Closing an account\"]": [
+      "Can't close your account",
+      "Company closed your account",
+      "Funds not received from closed account"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Closing an account\"]": [
+      "Can't close your account",
+      "Company closed your account",
+      "Fees charged for closing account",
+      "Funds not received from closed account"
+    ],
+    "[\"Student loan\", \"Non-federal student loan\", \"Dealing with my lender or servicer\"]": [
+      "Don't agree with fees charged",
+      "Having problems with customer service",
+      "Keep getting calls about my loan",
+      "Need information about my balance/terms",
+      "Received bad information about my loan",
+      "Trouble with how payments are handled"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Trouble using your card\"]": [
+      "Account sold or transferred to another company",
+      "Can't use card to make purchases",
+      "Credit card company won't increase or decrease your credit limit"
+    ],
+    "[\"Checking or savings account\", \"Savings account\", \"Opening an account\"]": [
+      "Account opened as a result of fraud",
+      "Confusing or missing disclosures",
+      "Didn't receive terms that were advertised",
+      "Unable to open an account"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount",
+      "Impersonated an attorney or official",
+      "Indicated committed crime not paying",
+      "Indicated shouldn't respond to lawsuit"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Managing an account\"]": [
+      "Banking errors",
+      "Cashing a check",
+      "Deposits and withdrawals",
+      "Fee problem",
+      "Funds not handled or disbursed as instructed",
+      "Problem accessing account",
+      "Problem making or receiving payments",
+      "Problem using a debit or ATM card"
+    ],
+    "[\"Student loan\", \"Non-federal student loan\", \"Can't repay my loan\"]": [
+      "Can't decrease my monthly payments",
+      "Can't get flexible payment options",
+      "Can't temporarily postpone payments"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Seized or attempted to seize your property",
+      "Threatened or suggested your credit would be damaged",
+      "Threatened to arrest you or take you to jail if you do not pay"
+    ],
+    "[\"Checking or savings account\", \"Savings account\", \"Closing an account\"]": [
+      "Can't close your account",
+      "Company closed your account",
+      "Fees charged for closing account",
+      "Funds not received from closed account"
+    ],
+    "[\"Checking or savings account\", \"Savings account\", \"Problem with a lender or other company charging your account\"]": [
+      "Can't stop withdrawals from your account",
+      "Money was taken from your account on the wrong day or for the wrong amount",
+      "Transaction was not authorized"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Opening an account\"]": [
+      "Account opened as a result of fraud",
+      "Confusing or missing disclosures",
+      "Didn't receive terms that were advertised",
+      "Unable to open an account"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Communication tactics\"]": [
+      "Frequent or repeated calls",
+      "Threatened to take legal action",
+      "Used obscene, profane, or other abusive language",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Credit reporting\", \"Unable to get your credit report or credit score\"]": [
+      "Other problem getting your report or credit score",
+      "Problem getting your free annual credit report"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"Communication tactics\"]": [
+      "Threatened to take legal action"
+    ],
+    "[\"Credit card or prepaid card\", \"Gift card\", \"Problem getting a card or closing an account\"]": [
+      "Trouble closing card",
+      "Trouble getting a working replacement card"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Problem with a lender or other company charging your account\"]": [
+      "Can't stop withdrawals from your account",
+      "Money was taken from your account on the wrong day or for the wrong amount",
+      "Transaction was not authorized"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Incorrect information on your report\"]": [
+      "Account information incorrect",
+      "Account status incorrect",
+      "Information belongs to someone else",
+      "Information is missing that should be on the report",
+      "Old information reappears or never goes away",
+      "Personal information incorrect"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Problem caused by your funds being low\"]": [
+      "Bounced checks or returned payments",
+      "Late or other fees",
+      "Non-sufficient funds and associated fees",
+      "Overdrafts and overdraft fees"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"Attempts to collect debt not owed\"]": [
+      "Debt is not yours",
+      "Debt was already discharged in bankruptcy and is no longer owed",
+      "Debt was paid",
+      "Debt was result of identity theft"
+    ],
+    "[\"Checking or savings account\", \"Savings account\", \"Managing an account\"]": [
+      "Banking errors",
+      "Cashing a check",
+      "Deposits and withdrawals",
+      "Fee problem",
+      "Funds not handled or disbursed as instructed",
+      "Problem accessing account",
+      "Problem making or receiving payments",
+      "Problem using a debit or ATM card"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Collected or attempted to collect exempt funds",
+      "Seized or attempted to seize your property",
+      "Sued you in a state where you do not live or did not sign for the debt",
+      "Sued you without properly notifying you of lawsuit",
+      "Threatened or suggested your credit would be damaged",
+      "Threatened to arrest you or take you to jail if you do not pay",
+      "Threatened to sue you for very old debt"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Other personal consumer report\", \"Incorrect information on your report\"]": [
+      "Information belongs to someone else",
+      "Information is incorrect",
+      "Information that should be on the report is missing",
+      "Public record information inaccurate"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"Taking/threatening an illegal action\"]": [
+      "Attempted to/Collected exempt funds",
+      "Seized/Attempted to seize property",
+      "Sued w/o proper notification of suit",
+      "Threatened arrest/jail if do not pay",
+      "Threatened to sue on too old debt"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Problem with a lender or other company charging your account\"]": [
+      "Can't stop withdrawals from your account",
+      "Money was taken from your account on the wrong day or for the wrong amount",
+      "Transaction was not authorized"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"Communication tactics\"]": [
+      "Called after sent written cease of comm",
+      "Frequent or repeated calls",
+      "Threatened to take legal action",
+      "Used obscene/profane/abusive language"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Took or threatened to take negative or legal action\"]": [
+      "Seized or attempted to seize your property",
+      "Sued you without properly notifying you of lawsuit",
+      "Threatened or suggested your credit would be damaged",
+      "Threatened to sue you for very old debt"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Closing your account\"]": [
+      "Can't close your account",
+      "Company closed your account"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Problem caused by your funds being low\"]": [
+      "Bounced checks or returned payments",
+      "Late or other fees",
+      "Non-sufficient funds and associated fees",
+      "Overdrafts and overdraft fees"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"Written notification about debt\"]": [
+      "Didn't receive enough information to verify debt",
+      "Didn't receive notice of right to dispute",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Problem with a purchase shown on your statement\"]": [
+      "Card was charged for something you did not purchase with the card",
+      "Credit card company isn't resolving a dispute about a purchase on your statement"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt is not mine",
+      "Debt resulted from identity theft",
+      "Debt was discharged in bankruptcy",
+      "Debt was paid"
+    ],
+    "[\"Checking or savings account\", \"CD (Certificate of Deposit)\", \"Managing an account\"]": [
+      "Banking errors",
+      "Deposits or withdrawals",
+      "Funds not handled or disbursed as instructed"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt is not mine",
+      "Debt resulted from identity theft",
+      "Debt was paid"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose prepaid card\", \"Advertising\"]": [
+      "Changes in terms from what was offered or advertised",
+      "Confusing or misleading advertising about the card"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"Communication tactics\"]": [
+      "Called before 8am or after 9pm",
+      "Frequent or repeated calls",
+      "Used obscene, profane, or other abusive language",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    "[\"Debt collection\", \"Federal student loan\", \"Improper contact or sharing of info\"]": [
+      "Talked to a third party about my debt"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Managing the loan or lease\"]": [
+      "Billing problem",
+      "Problem with additional products or services purchased with the loan",
+      "Problem with fees charged",
+      "Problem with the interest rate"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"Disclosure verification of debt\"]": [
+      "Not disclosed as an attempt to collect",
+      "Not given enough info to verify debt",
+      "Right to dispute notice not received"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Difficulty submitting a dispute or getting information about a dispute over the phone",
+      "Investigation took more than 30 days",
+      "Problem with personal statement of dispute",
+      "Their investigation did not fix an error on your report",
+      "Was not notified of investigation status or results"
+    ],
+    "[\"Debt collection\", \"Other debt\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount"
+    ],
+    "[\"Debt collection\", \"Private student loan debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Sued you without properly notifying you of lawsuit",
+      "Threatened or suggested your credit would be damaged",
+      "Threatened to sue you for very old debt"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Other personal consumer report\", \"Improper use of your report\"]": [
+      "Received unsolicited financial product or insurance offers after opting out",
+      "Report provided to employer without your written authorization",
+      "Reporting company used your report improperly"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\", \"Attempts to collect debt not owed\"]": [
+      "Debt is not yours",
+      "Debt was already discharged in bankruptcy and is no longer owed",
+      "Debt was paid",
+      "Debt was result of identity theft"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"Improper contact or sharing of info\"]": [
+      "Contacted me after I asked not to",
+      "Talked to a third party about my debt"
+    ],
+    "[\"Debt collection\", \"Other debt\", \"Attempts to collect debt not owed\"]": [
+      "Debt is not yours",
+      "Debt was paid",
+      "Debt was result of identity theft"
+    ],
+    "[\"Student loan\", \"Private student loan\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Their investigation did not fix an error on your report"
+    ],
+    "[\"Debt collection\", \"Private student loan debt\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount"
+    ],
+    "[\"Debt collection\", \"Payday loan debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Threatened to arrest you or take you to jail if you do not pay"
+    ],
+    "[\"Debt collection\", \"Auto\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount"
+    ],
+    "[\"Student loan\", \"Private student loan\", \"Incorrect information on your report\"]": [
+      "Account status incorrect"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Written notification about debt\"]": [
+      "Didn't receive enough information to verify debt",
+      "Didn't receive notice of right to dispute",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount",
+      "Impersonated an attorney or official",
+      "Indicated committed crime not paying",
+      "Indicated shouldn't respond to lawsuit"
+    ],
+    "[\"Debt collection\", \"Auto\", \"Disclosure verification of debt\"]": [
+      "Not disclosed as an attempt to collect"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Difficulty submitting a dispute or getting information about a dispute over the phone",
+      "Problem with personal statement of dispute",
+      "Their investigation did not fix an error on your report",
+      "Was not notified of investigation status or results"
+    ],
+    "[\"Checking or savings account\", \"CD (Certificate of Deposit)\", \"Closing an account\"]": [
+      "Can't close your account",
+      "Fees charged for closing account",
+      "Funds not received from closed account"
+    ],
+    "[\"Debt collection\", \"Credit card\", \"Improper contact or sharing of info\"]": [
+      "Contacted me after I asked not to",
+      "Talked to a third party about my debt"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Incorrect information on your report\"]": [
+      "Account information incorrect",
+      "Account status incorrect",
+      "Information belongs to someone else",
+      "Old information reappears or never goes away"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"Attempts to collect debt not owed\"]": [
+      "Debt is not yours",
+      "Debt was paid",
+      "Debt was result of identity theft"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount",
+      "Impersonated attorney, law enforcement, or government official",
+      "Indicated you were committing crime by not paying debt"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Other personal consumer report\", \"Identity theft protection or other monitoring services\"]": [
+      "Billing dispute for services",
+      "Problem canceling credit monitoring or identify theft protection service",
+      "Problem with product or service terms changing",
+      "Received unwanted marketing or advertising"
+    ],
+    "[\"Student loan\", \"Private student loan\", \"Struggling to repay your loan\"]": [
+      "Can't get other flexible options for repaying your loan"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Incorrect information on your report\"]": [
+      "Account information incorrect",
+      "Account status incorrect"
+    ],
+    "[\"Debt collection\", \"Auto\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt was discharged in bankruptcy",
+      "Debt was paid"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Struggling to pay your loan\"]": [
+      "Denied request to lower payments",
+      "Lender trying to repossess or disable the vehicle",
+      "Loan balance remaining after the vehicle is repossessed and sold",
+      "Problem after you declared or threatened to declare bankruptcy"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Other features, terms, or problems\"]": [
+      "Other problem",
+      "Problem with balance transfer",
+      "Problem with rewards from credit card"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Managing the loan or lease\"]": [
+      "Billing problem",
+      "Loan sold or transferred to another company",
+      "Problem with fees charged"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt is not mine",
+      "Debt was discharged in bankruptcy",
+      "Debt was paid"
+    ],
+    "[\"Credit card or prepaid card\", \"Gift card\", \"Problem with a purchase or transfer\"]": [
+      "Card company isn't resolving a dispute about a purchase or transfer"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose prepaid card\", \"Problem with a purchase or transfer\"]": [
+      "Card company isn't resolving a dispute about a purchase or transfer",
+      "Charged for a purchase or transfer you did not make with the card"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Attempts to collect debt not owed\"]": [
+      "Debt is not yours",
+      "Debt was already discharged in bankruptcy and is no longer owed",
+      "Debt was paid",
+      "Debt was result of identity theft"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount",
+      "Impersonated an attorney or official"
+    ],
+    "[\"Checking or savings account\", \"Savings account\", \"Problem caused by your funds being low\"]": [
+      "Late or other fees",
+      "Non-sufficient funds and associated fees"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose prepaid card\", \"Trouble using the card\"]": [
+      "Problem using the card to withdraw money from an ATM",
+      "Trouble using the card to spend money in a store or online"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Credit monitoring or identity theft protection services\"]": [
+      "Problem canceling credit monitoring or identify theft protection service",
+      "Problem with product or service terms changing"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Advertising and marketing, including promotional offers\"]": [
+      "Didn't receive advertised or promotional terms"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\", \"Communication tactics\"]": [
+      "Called before 8am or after 9pm",
+      "Frequent or repeated calls"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"Communication tactics\"]": [
+      "Called after sent written cease of comm",
+      "Called outside of 8am-9pm",
+      "Frequent or repeated calls",
+      "Threatened to take legal action"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Getting a loan or lease\"]": [
+      "Confusing or misleading advertising or marketing",
+      "Credit denial",
+      "Fraudulent loan",
+      "Problem with a trade-in"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Opening an account\"]": [
+      "Account opened as a result of fraud",
+      "Confusing or missing disclosures",
+      "Didn't receive terms that were advertised",
+      "Unable to open an account"
+    ],
+    "[\"Credit card or prepaid card\", \"Government benefit card\", \"Problem with a purchase or transfer\"]": [
+      "Card company isn't resolving a dispute about a purchase or transfer",
+      "Overcharged for a purchase or transfer you did make with the card"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Problem with personal statement of dispute",
+      "Their investigation did not fix an error on your report"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Getting a credit card\"]": [
+      "Application denied",
+      "Card opened as result of identity theft or fraud",
+      "Sent card you never applied for"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Taking/threatening an illegal action\"]": [
+      "Threatened arrest/jail if do not pay",
+      "Threatened to sue on too old debt"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt is not mine",
+      "Debt resulted from identity theft",
+      "Debt was discharged in bankruptcy",
+      "Debt was paid"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"Disclosure verification of debt\"]": [
+      "Not given enough info to verify debt",
+      "Right to dispute notice not received"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"Communication tactics\"]": [
+      "Frequent or repeated calls",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    "[\"Checking or savings account\", \"CD (Certificate of Deposit)\", \"Opening an account\"]": [
+      "Unable to open an account"
+    ],
+    "[\"Student loan\", \"Federal student loan servicing\", \"Dealing with my lender or servicer\"]": [
+      "Having problems with customer service",
+      "Need information about my balance/terms",
+      "Received bad information about my loan",
+      "Trouble with how payments are handled"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Improper use of your report\"]": [
+      "Credit inquiries on your report that you don't recognize",
+      "Reporting company used your report improperly"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Getting a loan or lease\"]": [
+      "Changes in terms mid-deal or after closing",
+      "Credit denial"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Incorrect information on your report\"]": [
+      "Account information incorrect",
+      "Account status incorrect",
+      "Information belongs to someone else",
+      "Public record information inaccurate"
+    ],
+    "[\"Debt collection\", \"Mortgage\", \"Taking/threatening an illegal action\"]": [
+      "Seized/Attempted to seize property",
+      "Sued where didn't live/sign for debt"
+    ],
+    "[\"Debt collection\", \"Mortgage debt\", \"Written notification about debt\"]": [
+      "Didn't receive enough information to verify debt"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Trouble using your card\"]": [
+      "Credit card company won't increase or decrease your credit limit"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Disclosure verification of debt\"]": [
+      "Not given enough info to verify debt",
+      "Right to dispute notice not received"
+    ],
+    "[\"Debt collection\", \"Other debt\", \"Communication tactics\"]": [
+      "Frequent or repeated calls"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"Written notification about debt\"]": [
+      "Didn't receive notice of right to dispute",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Threatened or suggested your credit would be damaged"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Struggling to pay your bill\"]": [
+      "Credit card company won't work with you while you're going through financial hardship"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Improper contact or sharing of info\"]": [
+      "Contacted me after I asked not to"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"Threatened to contact someone or share information improperly\"]": [
+      "Talked to a third-party about your debt"
+    ],
+    "[\"Credit reporting, credit repair services, or other personal consumer reports\", \"Other personal consumer report\", \"Problem with a company's investigation into an existing issue\"]": [
+      "Difficulty submitting a dispute or getting information about a dispute over the phone",
+      "Investigation took more than 30 days",
+      "Problem with personal statement of dispute",
+      "Their investigation did not fix an error on your report",
+      "Was not notified of investigation status or results"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Credit monitoring or identity theft protection services\"]": [
+      "Billing dispute for services",
+      "Problem with product or service terms changing",
+      "Received unwanted marketing or advertising"
+    ],
+    "[\"Credit card or prepaid card\", \"Government benefit card\", \"Problem getting a card or closing an account\"]": [
+      "Don't want a card provided by your employer or the government",
+      "Trouble closing card",
+      "Trouble getting a working replacement card"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Credit monitoring or identity theft protection services\"]": [
+      "Billing dispute for services"
+    ],
+    "[\"Debt collection\", \"Other debt\", \"Took or threatened to take negative or legal action\"]": [
+      "Collected or attempted to collect exempt funds",
+      "Seized or attempted to seize your property",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    "[\"Vehicle loan or lease\", \"Lease\", \"Struggling to pay your loan\"]": [
+      "Denied request to lower payments",
+      "Lender trying to repossess or disable the vehicle",
+      "Loan balance remaining after the vehicle is repossessed and sold"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount"
+    ],
+    "[\"Debt collection\", \"Non-federal student loan\", \"Cont'd attempts collect debt not owed\"]": [
+      "Debt was paid"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Problem when making payments\"]": [
+      "You never received your bill or did not know a payment was due"
+    ],
+    "[\"Debt collection\", \"Other debt\", \"Written notification about debt\"]": [
+      "Didn't receive enough information to verify debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Fees or interest\"]": [
+      "Charged too much interest",
+      "Problem with fees"
+    ],
+    "[\"Credit card or prepaid card\", \"General-purpose credit card or charge card\", \"Unable to get your credit report or credit score\"]": [
+      "Other problem getting your report or credit score"
+    ],
+    "[\"Debt collection\", \"Auto\", \"Communication tactics\"]": [
+      "Frequent or repeated calls"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Problem with a credit reporting company's investigation into an existing problem\"]": [
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    "[\"Student loan\", \"Federal student loan servicing\", \"Dealing with your lender or servicer\"]": [
+      "Received bad information about your loan"
+    ],
+    "[\"Debt collection\", \"Non-federal student loan\", \"Communication tactics\"]": [
+      "Called after sent written cease of comm"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"Improper contact or sharing of info\"]": [
+      "Talked to a third party about my debt"
+    ],
+    "[\"Debt collection\", \"Credit card debt\", \"Threatened to contact someone or share information improperly\"]": [
+      "Contacted your employer",
+      "Talked to a third-party about your debt"
+    ],
+    "[\"Debt collection\", \"Auto debt\", \"False statements or representation\"]": [
+      "Attempted to collect wrong amount"
+    ],
+    "[\"Debt collection\", \"Non-federal student loan\", \"Improper contact or sharing of info\"]": [
+      "Contacted me instead of my attorney"
+    ],
+    "[\"Debt collection\", \"Private student loan debt\", \"Attempts to collect debt not owed\"]": [
+      "Debt was already discharged in bankruptcy and is no longer owed"
+    ],
+    "[\"Checking or savings account\", \"Personal line of credit\", \"Incorrect information on your report\"]": [
+      "Account status incorrect"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"Taking/threatening an illegal action\"]": [
+      "Threatened to sue on too old debt"
+    ],
+    "[\"Credit card or prepaid card\", \"Payroll card\", \"Problem with an overdraft\"]": [
+      "Overdraft charges"
+    ],
+    "[\"Vehicle loan or lease\", \"Loan\", \"Unable to get your credit report or credit score\"]": [
+      "Other problem getting your report or credit score"
+    ],
+    "[\"Debt collection\", \"Payday loan\", \"Improper contact or sharing of info\"]": [
+      "Contacted employer after asked not to"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Credit monitoring or identity theft protection services\"]": [
+      "Billing dispute for services"
+    ],
+    "[\"Checking or savings account\", \"Checking account\", \"Improper use of your report\"]": [
+      "Received unsolicited financial product or insurance offers after opting out"
+    ],
+    "[\"Student loan\", \"Non-federal student loan\", \"Getting a loan\"]": [
+      "Can't qualify for a loan"
+    ],
+    "[\"Credit card or prepaid card\", \"Government benefit card\", \"Problem with overdraft\"]": [
+      "Overdraft charges"
+    ],
+    "[\"Credit card or prepaid card\", \"Gift card\", \"Trouble using the card\"]": [
+      "Trouble using the card to spend money in a store or online"
+    ],
+    "[\"Student loan\", \"Private student loan\", \"Getting a loan\"]": [
+      "Fraudulent loan"
+    ],
+    "[\"Debt collection\", \"I do not know\", \"Threatened to contact someone or share information improperly\"]": [
+      "Talked to a third-party about your debt"
+    ],
+    "[\"Debt collection\", \"Private student loan debt\", \"Written notification about debt\"]": [
+      "Didn't receive notice of right to dispute"
+    ],
+    "[\"Credit card or prepaid card\", \"Store credit card\", \"Incorrect information on your report\"]": [
+      "Personal information incorrect"
+    ],
+    "[\"Debt collection\", \"Other (i.e. phone, health club, etc.)\", \"Disclosure verification of debt\"]": [
+      "Not given enough info to verify debt"
+    ],
+    "[\"Checking or savings account\", \"Other banking product or service\", \"Credit monitoring or identity theft protection services\"]": [
+      "Billing dispute for services"
+    ]
+  },
+  "valid_full_paths": [
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Closing an account",
+      "Can't close your account"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Closing an account",
+      "Fees charged for closing account"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Closing an account",
+      "Funds not received from closed account"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Managing an account",
+      "Banking errors"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Managing an account",
+      "Deposits or withdrawals"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Managing an account",
+      "Funds not handled or disbursed as instructed"
+    ],
+    [
+      "Checking or savings account",
+      "CD (Certificate of Deposit)",
+      "Opening an account",
+      "Unable to open an account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Closing an account",
+      "Can't close your account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Closing an account",
+      "Company closed your account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Closing an account",
+      "Fees charged for closing account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Closing an account",
+      "Funds not received from closed account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Credit monitoring or identity theft protection services",
+      "Problem canceling credit monitoring or identify theft protection service"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Credit monitoring or identity theft protection services",
+      "Problem with product or service terms changing"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Improper use of your report",
+      "Received unsolicited financial product or insurance offers after opting out"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Incorrect information on your report",
+      "Account information incorrect"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Incorrect information on your report",
+      "Information belongs to someone else"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Incorrect information on your report",
+      "Public record information inaccurate"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Banking errors"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Cashing a check"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Deposits and withdrawals"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Fee problem"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Funds not handled or disbursed as instructed"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Problem accessing account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Problem making or receiving payments"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Managing an account",
+      "Problem using a debit or ATM card"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Opening an account",
+      "Account opened as a result of fraud"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Opening an account",
+      "Confusing or missing disclosures"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Opening an account",
+      "Didn't receive terms that were advertised"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Opening an account",
+      "Unable to open an account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem caused by your funds being low",
+      "Bounced checks or returned payments"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem caused by your funds being low",
+      "Late or other fees"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem caused by your funds being low",
+      "Non-sufficient funds and associated fees"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem caused by your funds being low",
+      "Overdrafts and overdraft fees"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem with a lender or other company charging your account",
+      "Can't stop withdrawals from your account"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem with a lender or other company charging your account",
+      "Money was taken from your account on the wrong day or for the wrong amount"
+    ],
+    [
+      "Checking or savings account",
+      "Checking account",
+      "Problem with a lender or other company charging your account",
+      "Transaction was not authorized"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Closing an account",
+      "Can't close your account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Closing an account",
+      "Company closed your account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Closing an account",
+      "Funds not received from closed account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Credit monitoring or identity theft protection services",
+      "Billing dispute for services"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Banking errors"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Cashing a check"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Deposits and withdrawals"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Fee problem"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Funds not handled or disbursed as instructed"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Problem accessing account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Problem making or receiving payments"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Managing an account",
+      "Problem using a debit or ATM card"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Opening an account",
+      "Account opened as a result of fraud"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Opening an account",
+      "Confusing or missing disclosures"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Opening an account",
+      "Didn't receive terms that were advertised"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Opening an account",
+      "Unable to open an account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem caused by your funds being low",
+      "Bounced checks or returned payments"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem caused by your funds being low",
+      "Late or other fees"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem caused by your funds being low",
+      "Non-sufficient funds and associated fees"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem caused by your funds being low",
+      "Overdrafts and overdraft fees"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem with a lender or other company charging your account",
+      "Can't stop withdrawals from your account"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem with a lender or other company charging your account",
+      "Money was taken from your account on the wrong day or for the wrong amount"
+    ],
+    [
+      "Checking or savings account",
+      "Other banking product or service",
+      "Problem with a lender or other company charging your account",
+      "Transaction was not authorized"
+    ],
+    [
+      "Checking or savings account",
+      "Personal line of credit",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Closing an account",
+      "Can't close your account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Closing an account",
+      "Company closed your account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Closing an account",
+      "Fees charged for closing account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Closing an account",
+      "Funds not received from closed account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Banking errors"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Cashing a check"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Deposits and withdrawals"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Fee problem"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Funds not handled or disbursed as instructed"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Problem accessing account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Problem making or receiving payments"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Managing an account",
+      "Problem using a debit or ATM card"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Opening an account",
+      "Account opened as a result of fraud"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Opening an account",
+      "Confusing or missing disclosures"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Opening an account",
+      "Didn't receive terms that were advertised"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Opening an account",
+      "Unable to open an account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Problem caused by your funds being low",
+      "Late or other fees"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Problem caused by your funds being low",
+      "Non-sufficient funds and associated fees"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Problem with a lender or other company charging your account",
+      "Can't stop withdrawals from your account"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Problem with a lender or other company charging your account",
+      "Money was taken from your account on the wrong day or for the wrong amount"
+    ],
+    [
+      "Checking or savings account",
+      "Savings account",
+      "Problem with a lender or other company charging your account",
+      "Transaction was not authorized"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Advertising and marketing, including promotional offers",
+      "Confusing or misleading advertising about the credit card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Advertising and marketing, including promotional offers",
+      "Didn't receive advertised or promotional terms"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Closing your account",
+      "Can't close your account"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Closing your account",
+      "Company closed your account"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Credit monitoring or identity theft protection services",
+      "Billing dispute for services"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Credit monitoring or identity theft protection services",
+      "Problem with product or service terms changing"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Credit monitoring or identity theft protection services",
+      "Received unwanted marketing or advertising"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Fees or interest",
+      "Charged too much interest"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Fees or interest",
+      "Problem with fees"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Fees or interest",
+      "Unexpected increase in interest rate"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Getting a credit card",
+      "Application denied"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Getting a credit card",
+      "Card opened as result of identity theft or fraud"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Getting a credit card",
+      "Delay in processing application"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Getting a credit card",
+      "Problem getting a working replacement card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Getting a credit card",
+      "Sent card you never applied for"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Improper use of your report",
+      "Credit inquiries on your report that you don't recognize"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Improper use of your report",
+      "Reporting company used your report improperly"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Account information incorrect"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Information belongs to someone else"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Information is missing that should be on the report"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Old information reappears or never goes away"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Incorrect information on your report",
+      "Personal information incorrect"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Add-on products and services"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Credit card company forcing arbitration"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Other problem"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Privacy issues"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Problem with balance transfer"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Problem with cash advances"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Problem with convenience check"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Problem with customer service"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Other features, terms, or problems",
+      "Problem with rewards from credit card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem when making payments",
+      "Problem during payment process"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem when making payments",
+      "You never received your bill or did not know a payment was due"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Investigation took more than 30 days"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with personal statement of dispute"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Was not notified of investigation status or results"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a purchase shown on your statement",
+      "Card was charged for something you did not purchase with the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a purchase shown on your statement",
+      "Credit card company isn't resolving a dispute about a purchase on your statement"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Problem with a purchase shown on your statement",
+      "Overcharged for something you did purchase with the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Struggling to pay your bill",
+      "Credit card company won't work with you while you're going through financial hardship"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Struggling to pay your bill",
+      "Filed for bankruptcy"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Struggling to pay your bill",
+      "Problem lowering your monthly payments"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Trouble using your card",
+      "Account sold or transferred to another company"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Trouble using your card",
+      "Can't use card to make purchases"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Trouble using your card",
+      "Credit card company won't increase or decrease your credit limit"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose credit card or charge card",
+      "Unable to get your credit report or credit score",
+      "Other problem getting your report or credit score"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Advertising",
+      "Changes in terms from what was offered or advertised"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Advertising",
+      "Confusing or misleading advertising about the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Problem getting a card or closing an account",
+      "Trouble closing card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Problem getting a card or closing an account",
+      "Trouble getting, activating, or registering a card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Problem with a purchase or transfer",
+      "Card company isn't resolving a dispute about a purchase or transfer"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Problem with a purchase or transfer",
+      "Charged for a purchase or transfer you did not make with the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Trouble using the card",
+      "Problem using the card to withdraw money from an ATM"
+    ],
+    [
+      "Credit card or prepaid card",
+      "General-purpose prepaid card",
+      "Trouble using the card",
+      "Trouble using the card to spend money in a store or online"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Gift card",
+      "Problem getting a card or closing an account",
+      "Trouble closing card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Gift card",
+      "Problem getting a card or closing an account",
+      "Trouble getting a working replacement card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Gift card",
+      "Problem with a purchase or transfer",
+      "Card company isn't resolving a dispute about a purchase or transfer"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Gift card",
+      "Trouble using the card",
+      "Trouble using the card to spend money in a store or online"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem getting a card or closing an account",
+      "Don't want a card provided by your employer or the government"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem getting a card or closing an account",
+      "Trouble closing card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem getting a card or closing an account",
+      "Trouble getting a working replacement card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem with a purchase or transfer",
+      "Card company isn't resolving a dispute about a purchase or transfer"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem with a purchase or transfer",
+      "Overcharged for a purchase or transfer you did make with the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Government benefit card",
+      "Problem with overdraft",
+      "Overdraft charges"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Payroll card",
+      "Problem with an overdraft",
+      "Overdraft charges"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Advertising and marketing, including promotional offers",
+      "Didn't receive advertised or promotional terms"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Closing your account",
+      "Can't close your account"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Closing your account",
+      "Company closed your account"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Credit monitoring or identity theft protection services",
+      "Billing dispute for services"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Fees or interest",
+      "Charged too much interest"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Fees or interest",
+      "Problem with fees"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Getting a credit card",
+      "Application denied"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Getting a credit card",
+      "Card opened as result of identity theft or fraud"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Getting a credit card",
+      "Sent card you never applied for"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Incorrect information on your report",
+      "Personal information incorrect"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Other features, terms, or problems",
+      "Other problem"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Other features, terms, or problems",
+      "Problem with balance transfer"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Other features, terms, or problems",
+      "Problem with rewards from credit card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Problem when making payments",
+      "You never received your bill or did not know a payment was due"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Problem with a purchase shown on your statement",
+      "Card was charged for something you did not purchase with the card"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Problem with a purchase shown on your statement",
+      "Credit card company isn't resolving a dispute about a purchase on your statement"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Struggling to pay your bill",
+      "Credit card company won't work with you while you're going through financial hardship"
+    ],
+    [
+      "Credit card or prepaid card",
+      "Store credit card",
+      "Trouble using your card",
+      "Credit card company won't increase or decrease your credit limit"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Credit monitoring or identity theft protection services",
+      "Billing dispute for services"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Credit monitoring or identity theft protection services",
+      "Didn't receive services that were advertised"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Credit monitoring or identity theft protection services",
+      "Problem canceling credit monitoring or identify theft protection service"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Credit monitoring or identity theft protection services",
+      "Problem with product or service terms changing"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Improper use of your report",
+      "Credit inquiries on your report that you don't recognize"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Improper use of your report",
+      "Received unsolicited financial product or insurance offers after opting out"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Improper use of your report",
+      "Report provided to employer without your written authorization"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Improper use of your report",
+      "Reporting company used your report improperly"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Account information incorrect"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Information belongs to someone else"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Information is missing that should be on the report"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Old information reappears or never goes away"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Personal information incorrect"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Incorrect information on your report",
+      "Public record information inaccurate"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Investigation took more than 30 days"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with personal statement of dispute"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Was not notified of investigation status or results"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Unable to get your credit report or credit score",
+      "Other problem getting your report or credit score"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Credit reporting",
+      "Unable to get your credit report or credit score",
+      "Problem getting your free annual credit report"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Identity theft protection or other monitoring services",
+      "Billing dispute for services"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Identity theft protection or other monitoring services",
+      "Problem canceling credit monitoring or identify theft protection service"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Identity theft protection or other monitoring services",
+      "Problem with product or service terms changing"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Identity theft protection or other monitoring services",
+      "Received unwanted marketing or advertising"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Improper use of your report",
+      "Received unsolicited financial product or insurance offers after opting out"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Improper use of your report",
+      "Report provided to employer without your written authorization"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Improper use of your report",
+      "Reporting company used your report improperly"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Incorrect information on your report",
+      "Information belongs to someone else"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Incorrect information on your report",
+      "Information is incorrect"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Incorrect information on your report",
+      "Information that should be on the report is missing"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Incorrect information on your report",
+      "Public record information inaccurate"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Problem with a company's investigation into an existing issue",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Problem with a company's investigation into an existing issue",
+      "Investigation took more than 30 days"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Problem with a company's investigation into an existing issue",
+      "Problem with personal statement of dispute"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Problem with a company's investigation into an existing issue",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Credit reporting, credit repair services, or other personal consumer reports",
+      "Other personal consumer report",
+      "Problem with a company's investigation into an existing issue",
+      "Was not notified of investigation status or results"
+    ],
+    [
+      "Debt collection",
+      "Auto",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Auto",
+      "Cont'd attempts collect debt not owed",
+      "Debt was discharged in bankruptcy"
+    ],
+    [
+      "Debt collection",
+      "Auto",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Auto",
+      "Disclosure verification of debt",
+      "Not disclosed as an attempt to collect"
+    ],
+    [
+      "Debt collection",
+      "Auto",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Attempts to collect debt not owed",
+      "Debt is not yours"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Attempts to collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Attempts to collect debt not owed",
+      "Debt was result of identity theft"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Communication tactics",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Threatened to contact someone or share information improperly",
+      "Talked to a third-party about your debt"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Written notification about debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    [
+      "Debt collection",
+      "Auto debt",
+      "Written notification about debt",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Communication tactics",
+      "Called after sent written cease of comm"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Communication tactics",
+      "Threatened to take legal action"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Communication tactics",
+      "Used obscene/profane/abusive language"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Cont'd attempts collect debt not owed",
+      "Debt is not mine"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Cont'd attempts collect debt not owed",
+      "Debt resulted from identity theft"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Cont'd attempts collect debt not owed",
+      "Debt was discharged in bankruptcy"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Disclosure verification of debt",
+      "Not disclosed as an attempt to collect"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Disclosure verification of debt",
+      "Not given enough info to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Disclosure verification of debt",
+      "Right to dispute notice not received"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "False statements or representation",
+      "Impersonated an attorney or official"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "False statements or representation",
+      "Indicated committed crime not paying"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "False statements or representation",
+      "Indicated shouldn't respond to lawsuit"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Improper contact or sharing of info",
+      "Contacted me after I asked not to"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Improper contact or sharing of info",
+      "Talked to a third party about my debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Taking/threatening an illegal action",
+      "Attempted to/Collected exempt funds"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Taking/threatening an illegal action",
+      "Seized/Attempted to seize property"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Taking/threatening an illegal action",
+      "Sued w/o proper notification of suit"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Taking/threatening an illegal action",
+      "Threatened arrest/jail if do not pay"
+    ],
+    [
+      "Debt collection",
+      "Credit card",
+      "Taking/threatening an illegal action",
+      "Threatened to sue on too old debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Attempts to collect debt not owed",
+      "Debt is not yours"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Attempts to collect debt not owed",
+      "Debt was already discharged in bankruptcy and is no longer owed"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Attempts to collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Attempts to collect debt not owed",
+      "Debt was result of identity theft"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Communication tactics",
+      "Called before 8am or after 9pm"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Communication tactics",
+      "Used obscene, profane, or other abusive language"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Communication tactics",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "False statements or representation",
+      "Impersonated attorney, law enforcement, or government official"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "False statements or representation",
+      "Indicated you were committing crime by not paying debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "False statements or representation",
+      "Told you not to respond to a lawsuit they filed against you"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Threatened to contact someone or share information improperly",
+      "Contacted your employer"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Threatened to contact someone or share information improperly",
+      "Talked to a third-party about your debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Collected or attempted to collect exempt funds"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Seized or attempted to seize your property"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Sued you in a state where you do not live or did not sign for the debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Sued you without properly notifying you of lawsuit"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened to arrest you or take you to jail if you do not pay"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened to sue you for very old debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Written notification about debt",
+      "Didn't receive enough information to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Written notification about debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    [
+      "Debt collection",
+      "Credit card debt",
+      "Written notification about debt",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    [
+      "Debt collection",
+      "Federal student loan",
+      "Improper contact or sharing of info",
+      "Talked to a third party about my debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Attempts to collect debt not owed",
+      "Debt is not yours"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Attempts to collect debt not owed",
+      "Debt was already discharged in bankruptcy and is no longer owed"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Attempts to collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Attempts to collect debt not owed",
+      "Debt was result of identity theft"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Communication tactics",
+      "Threatened to take legal action"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Communication tactics",
+      "Used obscene, profane, or other abusive language"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Communication tactics",
+      "You told them to stop contacting you, but they keep trying"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Cont'd attempts collect debt not owed",
+      "Debt is not mine"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Cont'd attempts collect debt not owed",
+      "Debt resulted from identity theft"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Disclosure verification of debt",
+      "Not given enough info to verify debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Disclosure verification of debt",
+      "Right to dispute notice not received"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "False statements or representation",
+      "Impersonated an attorney or official"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Improper contact or sharing of info",
+      "Contacted me after I asked not to"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Taking/threatening an illegal action",
+      "Threatened arrest/jail if do not pay"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Taking/threatening an illegal action",
+      "Threatened to sue on too old debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Threatened to contact someone or share information improperly",
+      "Talked to a third-party about your debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Took or threatened to take negative or legal action",
+      "Seized or attempted to seize your property"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Took or threatened to take negative or legal action",
+      "Sued you without properly notifying you of lawsuit"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Took or threatened to take negative or legal action",
+      "Threatened to sue you for very old debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Written notification about debt",
+      "Didn't receive enough information to verify debt"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Written notification about debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    [
+      "Debt collection",
+      "I do not know",
+      "Written notification about debt",
+      "Notification didn't disclose it was an attempt to collect a debt"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Communication tactics",
+      "Called after sent written cease of comm"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Communication tactics",
+      "Called outside of 8am-9pm"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Communication tactics",
+      "Threatened to take legal action"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Cont'd attempts collect debt not owed",
+      "Debt is not mine"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Cont'd attempts collect debt not owed",
+      "Debt resulted from identity theft"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Cont'd attempts collect debt not owed",
+      "Debt was discharged in bankruptcy"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Disclosure verification of debt",
+      "Not given enough info to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Disclosure verification of debt",
+      "Right to dispute notice not received"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "False statements or representation",
+      "Impersonated an attorney or official"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "False statements or representation",
+      "Indicated committed crime not paying"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "False statements or representation",
+      "Indicated shouldn't respond to lawsuit"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Improper contact or sharing of info",
+      "Contacted me after I asked not to"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Improper contact or sharing of info",
+      "Talked to a third party about my debt"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Taking/threatening an illegal action",
+      "Seized/Attempted to seize property"
+    ],
+    [
+      "Debt collection",
+      "Mortgage",
+      "Taking/threatening an illegal action",
+      "Sued where didn't live/sign for debt"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Attempts to collect debt not owed",
+      "Debt is not yours"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Attempts to collect debt not owed",
+      "Debt was already discharged in bankruptcy and is no longer owed"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Attempts to collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Attempts to collect debt not owed",
+      "Debt was result of identity theft"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Communication tactics",
+      "Called before 8am or after 9pm"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "False statements or representation",
+      "Impersonated attorney, law enforcement, or government official"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "False statements or representation",
+      "Indicated you were committing crime by not paying debt"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Took or threatened to take negative or legal action",
+      "Seized or attempted to seize your property"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened to arrest you or take you to jail if you do not pay"
+    ],
+    [
+      "Debt collection",
+      "Mortgage debt",
+      "Written notification about debt",
+      "Didn't receive enough information to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Non-federal student loan",
+      "Communication tactics",
+      "Called after sent written cease of comm"
+    ],
+    [
+      "Debt collection",
+      "Non-federal student loan",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Non-federal student loan",
+      "Improper contact or sharing of info",
+      "Contacted me instead of my attorney"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Communication tactics",
+      "Threatened to take legal action"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Cont'd attempts collect debt not owed",
+      "Debt is not mine"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Cont'd attempts collect debt not owed",
+      "Debt was discharged in bankruptcy"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Cont'd attempts collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Disclosure verification of debt",
+      "Not given enough info to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Improper contact or sharing of info",
+      "Talked to a third party about my debt"
+    ],
+    [
+      "Debt collection",
+      "Other (i.e. phone, health club, etc.)",
+      "Taking/threatening an illegal action",
+      "Threatened to sue on too old debt"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Attempts to collect debt not owed",
+      "Debt is not yours"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Attempts to collect debt not owed",
+      "Debt was paid"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Attempts to collect debt not owed",
+      "Debt was result of identity theft"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Communication tactics",
+      "Frequent or repeated calls"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Took or threatened to take negative or legal action",
+      "Collected or attempted to collect exempt funds"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Took or threatened to take negative or legal action",
+      "Seized or attempted to seize your property"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Written notification about debt",
+      "Didn't receive enough information to verify debt"
+    ],
+    [
+      "Debt collection",
+      "Other debt",
+      "Written notification about debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    [
+      "Debt collection",
+      "Payday loan",
+      "Improper contact or sharing of info",
+      "Contacted employer after asked not to"
+    ],
+    [
+      "Debt collection",
+      "Payday loan debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened to arrest you or take you to jail if you do not pay"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "Attempts to collect debt not owed",
+      "Debt was already discharged in bankruptcy and is no longer owed"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "False statements or representation",
+      "Attempted to collect wrong amount"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "Took or threatened to take negative or legal action",
+      "Sued you without properly notifying you of lawsuit"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened or suggested your credit would be damaged"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "Took or threatened to take negative or legal action",
+      "Threatened to sue you for very old debt"
+    ],
+    [
+      "Debt collection",
+      "Private student loan debt",
+      "Written notification about debt",
+      "Didn't receive notice of right to dispute"
+    ],
+    [
+      "Student loan",
+      "Federal student loan servicing",
+      "Dealing with my lender or servicer",
+      "Having problems with customer service"
+    ],
+    [
+      "Student loan",
+      "Federal student loan servicing",
+      "Dealing with my lender or servicer",
+      "Need information about my balance/terms"
+    ],
+    [
+      "Student loan",
+      "Federal student loan servicing",
+      "Dealing with my lender or servicer",
+      "Received bad information about my loan"
+    ],
+    [
+      "Student loan",
+      "Federal student loan servicing",
+      "Dealing with my lender or servicer",
+      "Trouble with how payments are handled"
+    ],
+    [
+      "Student loan",
+      "Federal student loan servicing",
+      "Dealing with your lender or servicer",
+      "Received bad information about your loan"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Can't repay my loan",
+      "Can't decrease my monthly payments"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Can't repay my loan",
+      "Can't get flexible payment options"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Can't repay my loan",
+      "Can't temporarily postpone payments"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Don't agree with fees charged"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Having problems with customer service"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Keep getting calls about my loan"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Need information about my balance/terms"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Received bad information about my loan"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Dealing with my lender or servicer",
+      "Trouble with how payments are handled"
+    ],
+    [
+      "Student loan",
+      "Non-federal student loan",
+      "Getting a loan",
+      "Can't qualify for a loan"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Dealing with your lender or servicer",
+      "Don't agree with the fees charged"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Dealing with your lender or servicer",
+      "Need information about your loan balance or loan terms"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Dealing with your lender or servicer",
+      "Problem with customer service"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Dealing with your lender or servicer",
+      "Received bad information about your loan"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Dealing with your lender or servicer",
+      "Trouble with how payments are being handled"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Getting a loan",
+      "Fraudulent loan"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Student loan",
+      "Private student loan",
+      "Struggling to repay your loan",
+      "Can't get other flexible options for repaying your loan"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Getting a loan or lease",
+      "Changes in terms mid-deal or after closing"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Getting a loan or lease",
+      "Credit denial"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Incorrect information on your report",
+      "Account information incorrect"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Managing the loan or lease",
+      "Billing problem"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Managing the loan or lease",
+      "Loan sold or transferred to another company"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Managing the loan or lease",
+      "Problem with fees charged"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with personal statement of dispute"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Excess mileage, damage, or wear fees, or other problem after the lease is finish"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Problem related to refinancing"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Problem when attempting to purchase vehicle at the end of the lease"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Problem while selling or giving up the vehicle"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Problem with paying off the loan"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Termination fees or other problem when ending the lease early"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Problems at the end of the loan or lease",
+      "Unable to receive car title or other problem after the loan is paid off"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Struggling to pay your loan",
+      "Denied request to lower payments"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Struggling to pay your loan",
+      "Lender trying to repossess or disable the vehicle"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Lease",
+      "Struggling to pay your loan",
+      "Loan balance remaining after the vehicle is repossessed and sold"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Credit monitoring or identity theft protection services",
+      "Billing dispute for services"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Getting a loan or lease",
+      "Confusing or misleading advertising or marketing"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Getting a loan or lease",
+      "Credit denial"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Getting a loan or lease",
+      "Fraudulent loan"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Getting a loan or lease",
+      "Problem with a trade-in"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Incorrect information on your report",
+      "Account information incorrect"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Incorrect information on your report",
+      "Account status incorrect"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Incorrect information on your report",
+      "Information belongs to someone else"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Incorrect information on your report",
+      "Old information reappears or never goes away"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Managing the loan or lease",
+      "Billing problem"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Managing the loan or lease",
+      "Problem with additional products or services purchased with the loan"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Managing the loan or lease",
+      "Problem with fees charged"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Managing the loan or lease",
+      "Problem with the interest rate"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Difficulty submitting a dispute or getting information about a dispute over the phone"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Problem with personal statement of dispute"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Their investigation did not fix an error on your report"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problem with a credit reporting company's investigation into an existing problem",
+      "Was not notified of investigation status or results"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problems at the end of the loan or lease",
+      "Problem related to refinancing"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problems at the end of the loan or lease",
+      "Problem while selling or giving up the vehicle"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problems at the end of the loan or lease",
+      "Problem with paying off the loan"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Problems at the end of the loan or lease",
+      "Unable to receive car title or other problem after the loan is paid off"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Struggling to pay your loan",
+      "Denied request to lower payments"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Struggling to pay your loan",
+      "Lender trying to repossess or disable the vehicle"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Struggling to pay your loan",
+      "Loan balance remaining after the vehicle is repossessed and sold"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Struggling to pay your loan",
+      "Problem after you declared or threatened to declare bankruptcy"
+    ],
+    [
+      "Vehicle loan or lease",
+      "Loan",
+      "Unable to get your credit report or credit score",
+      "Other problem getting your report or credit score"
+    ]
+  ]
+}

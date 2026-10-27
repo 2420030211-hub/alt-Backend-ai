@@ -1,19 +1,56 @@
-﻿from typing import Dict, Any
+from typing import Dict, Any
+
 from .preprocessing import clean_complaint_text
 from .label_mapping import label_registry
 from .model_loader import model_loader
+from .production_hierarchy import ProductionHierarchy
+
+production_hierarchy = ProductionHierarchy()
 from .confidence import calibrate_confidence
+
 
 def run_inference(text: str) -> Dict[str, Any]:
     cleaned = clean_complaint_text(text)
-    
-    # If a real model is loaded, use it
-    if model_loader.model_loaded and model_loader.model is not None:
-        preds = model_loader.model.predict([cleaned])[0]
-        # Format prediction
-        return preds
 
-    # Baseline rule-based predictor (accurate fallback before heavy model training)
+    if model_loader.model_loaded and model_loader.model is not None:
+        try:
+            preds, scores = model_loader.predict(cleaned)
+
+            # Keep confidence fields compatible with the existing API schema.
+            calibrated = calibrate_confidence(
+                scores,
+                threshold=0.65,
+            )
+
+            product = preds["product"]
+            sub_product = preds["sub_product"]
+            issue = preds["issue"]
+            sub_issue = preds["sub_issue"]
+
+            return {
+                "product": product,
+                "sub_product": sub_product,
+                "issue": issue,
+                "sub_issue": sub_issue,
+                "confidence": {
+                    "product": scores["product"],
+                    "sub_product": scores["sub_product"],
+                    "issue": scores["issue"],
+                    "sub_issue": scores["sub_issue"],
+                    "overall": calibrated["overall"],
+                },
+                "routed_to": label_registry.get_department(product),
+                # The old hard-coded registry is incomplete for the trained
+                # dataset, so do not claim the full hierarchy was validated.
+                "hierarchy_valid": production_hierarchy.validate(
+                    product, sub_product, issue, sub_issue
+                ),
+                "model_version": "bert-base-uncased-hierarchical-v1",
+            }
+        except Exception as exc:
+            print(f"BERT inference failed; using fallback: {exc}")
+
+    # Existing rule-based fallback
     t = cleaned.lower()
     product = "Checking or savings account"
     sub_product = "Checking account"
@@ -51,19 +88,24 @@ def run_inference(text: str) -> Dict[str, Any]:
         "sub_product": max(0.5, conf - 0.04),
         "issue": max(0.5, conf - 0.08),
         "sub_issue": max(0.5, conf - 0.12),
-        "overall": conf
     }
-
-    is_valid = label_registry.validate_hierarchy(product, sub_product, issue, sub_issue)
-    department = label_registry.get_department(product)
 
     return {
         "product": product,
         "sub_product": sub_product,
         "issue": issue,
         "sub_issue": sub_issue,
-        "confidence": scores,
-        "routed_to": department,
-        "hierarchy_valid": is_valid,
-        "model_version": "baseline-rule-classifier-v1" if not model_loader.model_loaded else "trained-neural-v1"
+        "confidence": {
+            **scores,
+            "overall": round(sum(scores.values()) / len(scores), 4),
+        },
+        "routed_to": label_registry.get_department(product),
+        "hierarchy_valid": production_hierarchy.validate(
+            product, sub_product, issue, sub_issue
+        ),
+        "model_version": (
+            "bert-base-uncased-hierarchical-v1-fallback"
+            if not model_loader.model_loaded
+            else "bert-base-uncased-hierarchical-v1-fallback-after-error"
+        ),
     }

@@ -1,0 +1,33 @@
+{
+  "validation_rows": 2540,
+  "device": "cuda",
+  "mean_target_accuracy": 0.6719,
+  "mean_target_macro_f1": 0.3851,
+  "targets": {
+    "Product": {
+      "evaluated_rows": 2540,
+      "accuracy": 0.8654,
+      "macro_f1": 0.8102,
+      "weighted_f1": 0.8634
+    },
+    "Sub-product": {
+      "evaluated_rows": 2540,
+      "accuracy": 0.7929,
+      "macro_f1": 0.2562,
+      "weighted_f1": 0.7775
+    },
+    "Issue": {
+      "evaluated_rows": 2540,
+      "accuracy": 0.6008,
+      "macro_f1": 0.32,
+      "weighted_f1": 0.5929
+    },
+    "Sub-issue": {
+      "evaluated_rows": 2535,
+      "accuracy": 0.4284,
+      "macro_f1": 0.1541,
+      "weighted_f1": 0.4077
+    }
+  },
+  "note": "Validation labels absent from training are excluded for that target. Mean target metrics are averages across four targets, not exact-match accuracy."
+}
