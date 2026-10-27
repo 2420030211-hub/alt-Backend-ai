@@ -80,8 +80,24 @@
 - **Server Test Suite**: `npm test` executed with **7 passed out of 7 tests (0 failures)**.
 - **Fallback Classifiers**: Node.js API gateway gracefully falls back to deterministic rule-based classifiers when Python microservices are offline.
 
-## H. Decisions Requiring User Approval
-1. **Data Publication Safety**: Should CFPB complaint text CSVs be committed to GitHub or excluded via `.gitignore`? (Recommended: Exclude raw data; commit audit scripts, manifests, and synthetics).
-2. **Canonical Dataset**: Confirm that the real consumer narrative dataset (`cora_train.csv` / `complaints_cleaned.csv`) is the sole canonical target for hierarchical classification.
-3. **Split Re-balancing**: Confirm whether to regenerate a 70/15/15 group-stratified split to ensure 0 singleton-class loss across validation and test sets.
-4. **Approval for Cloud GPU Training**: Approval needed before initiating RunPod or fine-tuning ModernBERT/BERT.
+## H. Git Status, Push Authentication & Remaining Steps
+1. **Local Git Commit Chain**:
+   - `08017aa`: `"Update report generator to parse verified baseline metrics"`
+   - `2b41794`: `"Execute CORA TF-IDF + LinearSVC baseline and log verified metrics"`
+   - `2e4a3b6`: `"Add CORA data audit, baseline pipeline, and neural experiment preparation"`
+   - Local working tree is clean.
+2. **Push Authentication Finding**:
+   - Command attempted: `git push -u origin master`
+   - Remote target: `https://github.com/kridhaydsa123/ALT-Backend.git`
+   - Result: HTTP 403 (`remote: Permission to kridhaydsa123/ALT-Backend.git denied to 2420030211-hub`).
+   - Resolution: The active Windows Git credential helper is authenticated as `2420030211-hub`. To push, either grant repository write permissions to `2420030211-hub` on GitHub, or update the remote URL to use an authenticated Personal Access Token or SSH key:
+     ```powershell
+     git remote set-url origin https://<YOUR_GITHUB_TOKEN>@github.com/kridhaydsa123/ALT-Backend.git
+     git push -u origin master
+     ```
+3. **Repository Security & Cleanliness**:
+   - Raw complaint datasets (`*.csv`), binary checkpoints (`*.pt`, `*.bin`, `*.safetensors`), virtual environments (`.venv/`), and `.env` credentials are completely excluded via `.gitignore`.
+4. **Next Local Execution Steps**:
+   - Maintain the verified `.venv` (`Python 3.13.14`).
+   - The server API gateway (`server/src/server.js`) and tests (`npm test` 7/7 passed) remain ready for local development.
+   - All neural training configurations (`bert_base.json`, `modernbert_base.json`) are finalized and staged without model weights. Manual GPU fine-tuning can be triggered externally by the user whenever ready.
